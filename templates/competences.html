@@ -1,0 +1,19 @@
+<section>
+
+<h2>Competences</h2>
+<div>
+
+% for comp in cv.competences:
+
+    <h4>${comp.area}</h4>
+    <ul>
+    % for skill in comp.skills:
+        <li>${skill}</li>
+    % endfor
+    </ul>
+
+% endfor
+
+</div>
+
+</section>

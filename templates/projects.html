@@ -1,0 +1,23 @@
+<section>
+
+<h2>Projects</h2>
+
+% for proj in cv.projects:
+
+    <article>
+
+        <h4>${proj.title}</h4>
+        <div>${proj.start_date} - ${proj.end_date}</div>
+        <p>${proj.description}</p>
+
+        <ul>
+            % for skill in proj.skills:
+                <li>${skill}</li>
+            % endfor
+        </ul>
+
+    </article>
+
+% endfor
+
+</section>

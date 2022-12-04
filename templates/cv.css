@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.cv-main {
+    max-width: 210mm;
+    margin: auto;
+}
+
+.cv-section-separator {
+    width: auto;
+    border-bottom: 0.5mm solid black;
+}
+
+.cv-competence-skills {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.cv-competence-skills > li {
+    margin: 0 1mm 0 1mm;
+}
+
+.cv-experience-achievements {
+
+}
+
+.cv-experience-achievement-results {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cv-experience-skills {
+    list-style-type: none;
+    display: flex;
+}
+
+.cv-experience-skills > li {
+    margin: 0 1mm 0 1mm;
+}

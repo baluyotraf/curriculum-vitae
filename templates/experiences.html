@@ -1,6 +1,11 @@
 <section>
 
-<h2>Professional Experience</h2>
+<h2>
+    <i class="fa-solid fa-briefcase"></i>
+    <text>Professional Experience</text>
+</h2>
+
+<div class="cv-section-separator"></div>
 
 % for exp in cv.experiences:
 
@@ -9,11 +14,11 @@
         <h4>${exp.title}, ${exp.company}, ${exp.country}</h4>
         <div>${exp.start_date} - ${exp.end_date}</div>
 
-        <ul>
+        <ul class="cv-experience-achievements">
         % for ach in exp.achievements:
             <li>
                 <p>${ach.task}</p>
-                <ul>
+                <ul class="cv-experience-achievement-results">
                 % for res in ach.results:
                     <li>${res}</li>
                 % endfor
@@ -22,7 +27,7 @@
         % endfor
         </ul>
 
-        <ul>
+        <ul class="cv-experience-skills">
         % for skill in exp.skills:
             <li>${skill}</li>
         % endfor

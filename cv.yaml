@@ -1,0 +1,94 @@
+headline:
+  name: Raffaello Baluyot
+  tagline: >-
+    Software + Machine Learning | Turning great research ideas to production
+    quality software
+  linkedin: baluyotraf
+  github: baluyotraf
+  phone: "+46760215374"
+  email: baluyotraf@outlook.com
+  address: Gothenburg, Sweden
+  summary: >-
+    A machine learning engineer who is proficient in Deep Learning,
+    Machine Learning, and Software Engineering. A open-source contributor
+    with minor contributions to several data libraries such as Scikit-Learn,
+    Pandas-Profiling, PyGMO, etc. A highly curious individual that engages in
+    research and academic works.
+
+competences:
+  - area: Programming Languages
+    skills:
+      - Python
+      - Kotlin
+      - Bash
+      - C
+      - C++
+      - SQL
+  - area: Data Science libraries
+    skills:
+      - Tensorflow
+      - Scikit-Learn
+      - Pandas
+      - Numpy
+  - area: Big Data Platforms
+    skills:
+      - Spark
+      - Sun Grid Engine
+      - Azure ML
+  - area: Data Stores
+    skills:
+      - Azure Blob Storage
+      - HDFS
+      - MySQL
+      - SQL Server
+      - PostgreSQL
+      - Redis
+
+experiences:
+  - title: Embedded Machine Learning Engineer
+    company: Autoliv AB
+    country: Sweden
+    start_date: 2022-06-01
+    end_date: present
+    achievements:
+      - task: >-
+          Researched and developed a classifier for escooter rider interaction
+          with the handle bar.
+        results:
+          - >-
+            Research team used the model to perform behavior analysis on the
+            rider.
+      - task: >-
+          Designed and developed an Android App and Android SDK for collecting
+          research data.
+        results: []
+      - task: >-
+          Researched analytical and machine learning algorithms for crash
+          detection.
+        results: []
+    skills:
+      - Python
+      - Kotlin
+
+projects:
+  - title: Rock Size Distribution
+    description: >-
+      A commission project to demonstrate the calculation of the rock sizes
+      during the mining process. Sieving the rocks is considered a more
+      accurate approach to determine the rock size, however it is not scalable
+      for large mining operations. The idea is to present a possible
+      alternative using computer vision.
+    start_date: 2021-06-01
+    end_date: 2021-07-01
+    skills:
+      - Python
+      - Tensorflow
+      - OpenCV
+      - Scikit-Image
+
+education:
+  - degree: Masters Degree
+    program: Computer Engineering
+    institution: Mapua Institute of Technology
+    start_date: 2010-07-01
+    end_date: 2015-09-01

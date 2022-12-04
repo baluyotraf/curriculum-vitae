@@ -11,19 +11,16 @@ from pydantic import BaseModel as PydanticModel
 class BaseModel(PydanticModel):
     pass
 
+class BasicInfo(BaseModel):
+    name: str
+    tagline: str
 
-class SocialInfo(BaseModel):
     linkedin: str
     github: str
     phone: str
     email: str
     address: str
 
-
-class BasicInfo(BaseModel):
-    name: str
-    tagline: str
-    social_info: SocialInfo
     summary: str
 
 

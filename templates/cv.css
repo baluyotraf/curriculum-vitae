@@ -8,6 +8,10 @@
     margin: auto;
 }
 
+.cv-section-header {
+    font-variant: small-caps;
+}
+
 .cv-section-separator {
     width: auto;
     border-bottom: 0.5mm solid black;
@@ -18,8 +22,12 @@
     display: inline-flex;
 }
 
-.cv-competence-skills > li {
-    margin: 0 1mm 0 1mm;
+.cv-competence-skills > li::before {
+    content: ", ";
+}
+
+.cv-competence-skills :first-child::before {
+    content: "";
 }
 
 .cv-experience-achievements {

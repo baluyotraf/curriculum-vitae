@@ -18,6 +18,21 @@
     border-bottom: 0.5mm solid black;
 }
 
+.cv-skill-tags {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cv-skill-tags> li {
+    border: 0.2mm solid rgba(0, 0, 0, 0.3);
+    padding: 0.5mm 2mm 0.5mm 2mm;
+    margin: 0.5mm;
+    border-radius: 2mm;
+}
+
+
 .cv-competences {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -42,20 +57,42 @@
     content: "";
 }
 
-.cv-experience-achievements {
 
+.cv-experience {
+    display: grid;
+    grid-template-columns: min-content 1f;
+    grid-template-rows: auto auto auto;
+    column-gap: 5mm;
+}
+
+.cv-experience-dates {
+    grid-row: 1 / span 3;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    border-right: 0.5mm solid black;
+    padding-right: 5mm;
+    text-transform: capitalize;
+}
+
+.cv-experience-title {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.cv-experience-achievements {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.cv-experience-skills{
+    grid-row: 3;
+    grid-column: 2;
 }
 
 .cv-experience-achievement-results {
     list-style-type: none;
     padding: 0;
-}
-
-.cv-experience-skills {
-    list-style-type: none;
-    display: flex;
-}
-
-.cv-experience-skills > li {
-    margin: 0 1mm 0 1mm;
+    font-style: italic;
 }

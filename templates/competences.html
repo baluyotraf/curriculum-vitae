@@ -1,4 +1,4 @@
-<section class="cv-competences">
+<section>
 
 <h2 class="cv-section-header">
     <i class="fa-solid fa-code"></i>
@@ -7,9 +7,11 @@
 
 <div class="cv-section-separator"></div>
 
+<article class="cv-competences">
+
 % for comp in cv.competences:
 
-    <h4>${comp.area}</h4>
+    <h4 class="cv-competence-area">${comp.area}</h4>
     <ul class="cv-competence-skills">
     % for skill in comp.skills:
         <li>${skill}</li>
@@ -18,6 +20,6 @@
 
 % endfor
 
-</div>
+</article>
 
 </section>

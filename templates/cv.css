@@ -1,6 +1,7 @@
 * {
     margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* border: 1px solid black; */
 }
 
 .cv-main {
@@ -17,9 +18,20 @@
     border-bottom: 0.5mm solid black;
 }
 
+.cv-competences {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 5mm;
+}
+
+.cv-competence-area {
+    text-align: right;
+}
+
 .cv-competence-skills {
     list-style-type: none;
     display: inline-flex;
+    padding: 0;
 }
 
 .cv-competence-skills > li::before {

@@ -83,6 +83,7 @@
     grid-template-rows: auto auto auto;
     grid-template-columns: min-content 1f;
     column-gap: 5mm;
+    justify-content: start;
 }
 
 .cv-experience-title {
@@ -111,6 +112,7 @@
     grid-template-rows: auto auto auto;
     grid-template-columns: min-content 1f;
     column-gap: 5mm;
+    justify-content: start;
 }
 
 .cv-project-title {
@@ -120,5 +122,23 @@
 
 .cv-project-skills {
     grid-row: 3;
+    grid-column: 2;
+}
+
+.cv-education {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto, 1f;
+    column-gap: 5mm;
+    justify-content: start;
+}
+
+.cv-education-title {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.cv-education-details {
+    grid-row: 2;
     grid-column: 2;
 }

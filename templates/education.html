@@ -9,9 +9,13 @@
 
 % for edu in cv.education:
 
-    <article>
-        <h4>${edu.degree} in ${edu.program} - ${edu.institution}</h4>
-        <div>${edu.start_date} - ${edu.end_date}</div>
+    <article class="cv-education cv-section-content">
+        <h4 class="cv-education-title">${edu.degree} in ${edu.program} - ${edu.institution}</h4>
+        <div class="cv-left-grid-dates">
+            <text>${edu.start_date}</text>
+            <text>${edu.end_date}</text>
+        </div>
+        <p class="cv-education-details">${edu.details}</p>
     </article>
 
 % endfor

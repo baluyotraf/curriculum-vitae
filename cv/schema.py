@@ -61,6 +61,7 @@ class Education(BaseModel):
     degree: str
     program: str
     institution: str
+    details: str
 
     start_date: date
     end_date: Union[date, Literal['present']]

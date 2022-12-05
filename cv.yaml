@@ -43,6 +43,13 @@ competences:
       - SQL Server
       - PostgreSQL
       - Redis
+  - area: Deployment and Platforms
+    skills:
+      - Git
+      - Linux
+      - Docker
+      - GilabCI
+      - Ansible
 
 experiences:
   - title: Embedded Machine Learning Engineer
@@ -69,6 +76,14 @@ experiences:
     skills:
       - Python
       - Kotlin
+      - Tensorflow
+      - Azure Functions
+      - Docker
+      - SQL Server
+      - Azure ML
+      - Azure Devops
+      - Android
+      - Jetpack Compose
 
 projects:
   - title: Rock Size Distribution

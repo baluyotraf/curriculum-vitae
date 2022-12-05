@@ -9,13 +9,16 @@
 
 % for proj in cv.projects:
 
-    <article>
+    <article class="cv-project cv-section-content">
 
-        <h4>${proj.title}</h4>
-        <div>${proj.start_date} - ${proj.end_date}</div>
-        <p>${proj.description}</p>
+        <h4 class="cv-project-title">${proj.title}</h4>
+        <div class="cv-left-grid-dates">
+            <text>${proj.end_date}</text>
+            <text>${proj.start_date}</text>
+        </div>
+        <p class="cv-project-description">${proj.description}</p>
 
-        <ul>
+        <ul class="cv-skill-tags cv-project-skills">
             % for skill in proj.skills:
                 <li>${skill}</li>
             % endfor

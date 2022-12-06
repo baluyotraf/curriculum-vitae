@@ -55,13 +55,14 @@
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: auto auto;
-    column-gap: 5mm;
+    column-gap: 8mm;
     margin-bottom: 5mm;
 }
 
 .cv-headline-name {
     grid-row: 1;
     grid-column: 1;
+    margin-bottom: 2mm;
 }
 
 .cv-headline-contacts {
@@ -75,11 +76,14 @@
 .cv-headline-tagline {
     grid-row: 2;
     grid-column: 1;
+    margin-bottom: 2mm;
+    text-align: justify;
 }
 
 .cv-headline-summary {
     grid-row: 3;
     grid-column: 1;
+    text-align: justify;
 }
 
 .cv-competences {

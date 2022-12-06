@@ -7,6 +7,7 @@
 .cv-main {
     max-width: 210mm;
     margin: auto;
+    padding: 10mm;
 }
 
 .cv-section-header {
@@ -47,6 +48,37 @@
     text-transform: capitalize;
 }
 
+
+.cv-headline {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    column-gap: 5mm;
+    margin-bottom: 5mm;
+}
+
+.cv-headline-name {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.cv-headline-contacts {
+    grid-row: 1 / -1;
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.cv-headline-tagline {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.cv-headline-summary {
+    grid-row: 3;
+    grid-column: 1;
+}
 
 .cv-competences {
     display: grid;

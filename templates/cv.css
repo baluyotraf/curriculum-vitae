@@ -84,8 +84,9 @@
 
 .cv-competences {
     display: grid;
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: 60mm 1fr;
     column-gap: 5mm;
+    row-gap: 1mm;
 }
 
 .cv-competence-area {
@@ -100,7 +101,7 @@
 }
 
 .cv-competence-skills > li {
-    margin-left: 1mm;
+    margin-left: 2mm;
 }
 
 .cv-competence-skills > li::after {

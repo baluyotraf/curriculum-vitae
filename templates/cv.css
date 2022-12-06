@@ -1,6 +1,6 @@
 * {
     margin: 0.2mm;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Roboto';
     /* border: 1px solid black; */
 }
 
@@ -11,43 +11,45 @@
 }
 
 .cv-section-header {
-    font-variant: small-caps;
-}
-
-.cv-section-separator {
-    width: auto;
-    border-bottom: 0.5mm solid black;
+    text-align: center;
+    padding: 2mm;
 }
 
 .cv-section-content {
     margin: 3mm;
 }
 
-.cv-skill-tags {
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
+.cv-timeline {
+    display: grid;
+    grid-template-columns: min-content auto;
 }
 
-.cv-skill-tags> li {
-    border: 0.2mm solid rgba(0, 0, 0, 0.3);
-    padding: 0.5mm 2mm 0.5mm 2mm;
-    margin: 0.5mm;
-    border-radius: 2mm;
-}
-
-.cv-left-grid-dates {
-    grid-row: 1 / -1;
+.cv-timeline-time {
     grid-column: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: right;
-    border-right: 0.5mm solid black;
     padding-right: 5mm;
-    text-transform: capitalize;
+    margin: 5mm 0 5mm 0;
+    border-right: 0.5mm solid black;
+    text-transform: uppercase;
 }
 
+.cv-timeline-time::after {
+    content: "\f192";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: relative;
+    background-color: white;
+    left: 8.5mm;
+    font-size: 6mm;
+}
+
+.cv-timeline-event {
+    grid-column: 2;
+    margin-left: 5mm;
+}
 
 .cv-headline {
     display: grid;
@@ -109,28 +111,8 @@
     content: "";
 }
 
-
-.cv-experience {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: min-content 1f;
-    column-gap: 5mm;
-    justify-content: start;
-}
-
-.cv-experience-title {
-    grid-row: 1;
-    grid-column: 2;
-}
-
 .cv-experience-achievements {
-    grid-row: 2;
-    grid-column: 2;
-}
-
-.cv-experience-skills{
-    grid-row: 3;
-    grid-column: 2;
+    margin-bottom: 5mm;
 }
 
 .cv-experience-achievement-results {
@@ -139,38 +121,6 @@
     font-style: italic;
 }
 
-.cv-project {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: min-content 1f;
-    column-gap: 5mm;
-    justify-content: start;
-}
-
-.cv-project-title {
-    grid-row: 1;
-    grid-column: 2;
-}
-
-.cv-project-skills {
-    grid-row: 3;
-    grid-column: 2;
-}
-
-.cv-education {
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto, 1f;
-    column-gap: 5mm;
-    justify-content: start;
-}
-
-.cv-education-title {
-    grid-row: 1;
-    grid-column: 2;
-}
-
-.cv-education-details {
-    grid-row: 2;
-    grid-column: 2;
+.cv-project-description {
+    margin-bottom: 5mm;
 }

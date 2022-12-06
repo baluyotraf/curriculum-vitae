@@ -1,30 +1,37 @@
-<section>
+<section class="cv-section">
 
 <h2 class="cv-section-header">
     <i class="fa-solid fa-desktop"></i>
     <text>Projects</text>
 </h2>
 
-<div class="cv-section-separator"></div>
-
 % for proj in cv.projects:
 
-    <article class="cv-project cv-section-content">
+<article class="cv-project cv-timeline cv-section-content">
 
-        <h4 class="cv-project-title">${proj.title}</h4>
-        <div class="cv-left-grid-dates">
-            <text>${proj.end_date}</text>
-            <text>${proj.start_date}</text>
-        </div>
+<div class="cv-timeline-time">
+    <text>${proj.end_date}</text>
+    <text>${proj.start_date}</text>
+</div>
+
+<div class="mr-card cv-timeline-event">
+    <div class="mr-card-header">
+        <h4>${proj.title}</h4>
+    </div>
+
+    <div class="mr-card-content">
         <p class="cv-project-description">${proj.description}</p>
 
-        <ul class="cv-skill-tags cv-project-skills">
+        <ul class="mr-chip-list">
             % for skill in proj.skills:
-                <li>${skill}</li>
+                <li class="mr-chip">${skill}</li>
             % endfor
         </ul>
+    </div>
 
-    </article>
+</div>
+
+</article>
 
 % endfor
 

@@ -5,13 +5,13 @@ CSS Variables
 */
 
 :root {
-    --color-primary: #212121;
-    --color-primary-dark: #000000;
-    --color-primary-light: #484848;
+    --color-primary: #4e342e;
+    --color-primary-dark: #260e04;
+    --color-primary-light: #7b5e57;
     --color-primary-text: #ffffff;
 
     --color-secondary: #ffccbc;
-    --color-secondary-dark: #cb9b8c;
+    --color-secondary-dark: #e9ccc3;
     --color-secondary-light: #ffffee;
     --color-secondary-text: #000000;
 
@@ -24,15 +24,49 @@ CSS Variables
     --border-size: 0.2mm;
     --border-color: rgba(0, 0, 0, 0.2);
     --border-radius: 0mm;
+
+    --font-primary: "Noto Sans JP";
+    --font-secondary: "Maven Pro";
 }
 
-
-
-* {
-    font-family: 'Roboto';
+h1 {
+    font-family: var(--font-primary);
+    font-size: 10mm;
+    font-weight: 300;
+    margin: 1mm 0 2mm 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h2 {
+    font-family: var(--font-primary);
+    font-size: 6mm;
+    font-weight: 500;
+    margin: 1mm 0 2mm 0;
+}
+
+h3 {
+    font-family: var(--font-primary);
+    font-size: 6mm;
+    font-weight: 700;
+    margin: 1mm 0 2mm 0;
+}
+
+h4 {
+    font-family: var(--font-primary);
+    font-size: 4.5mm;
+    font-weight: 500;
+    margin: 1mm 0 1.5mm 0;
+}
+
+h5 {
+    font-family: var(--font-primary);
+    font-size: 4mm;
+    font-weight: 500;
+    margin: 1mm 0 1mm 0;
+}
+
+p {
+    font-family: var(--font-secondary);
+    font-size: 4mm;
     margin: 0;
 }
 
@@ -65,11 +99,13 @@ Material
 }
 
 .mr-chip {
-    padding: 0.5mm var(--spacing-size-normal) 0.5mm var(--spacing-size-normal);
+    padding: 0.5mm var(--spacing-size-normal) 1mm var(--spacing-size-normal);
     border-radius: var(--border-radius);
     margin: 0.5mm;
     background: var(--color-secondary);
     color: var(--color-secondary-text);
+    font-family: var(--font-secondary);
+    font-size: 4.5mm;
 }
 
 .mr-chip:nth-child(even) {
@@ -122,7 +158,16 @@ Timelines
     text-transform: uppercase;
     background: var(--color-primary-light);
     color: var(--color-primary-text);
+    border: var(--border-size) solid var(--border-color);
     padding: var(--spacing-size-normal);
+    padding-top: calc(var(--spacing-size-normal) + 2mm);
+    font-family: var(--font-secondary);
+    font-size: 3.5mm;
+    font-weight: 900;
+}
+
+.cv-timeline-time > * {
+    margin-bottom: 1mm;
 }
 
 .cv-timeline-event {
@@ -151,6 +196,11 @@ Headline
              var(--spacing-size-large);
 }
 
+.cv-headline-summary {
+    font-family: var(--font-secondary);
+    font-size: 4.5mm;
+}
+
 .cv-headline-contacts {
     grid-row: 1;
     grid-column: 2;
@@ -163,6 +213,12 @@ Headline
              var(--spacing-size-large)
              var(--spacing-size-normal)
              var(--spacing-size-normal);
+    font-family: var(--font-secondary);
+}
+
+.cv-headline-contacts > span,
+.cv-headline-contacts > a {
+    margin: 1mm 0 1mm 0;
 }
 
 /*

@@ -1,9 +1,9 @@
 <section class="cv-section">
 
-<h2 class="cv-section-header">
+<h3 class="cv-section-header">
     <i class="fa-solid fa-briefcase"></i>
     <text>Professional Experience</text>
-</h2>
+</h3>
 
 % for exp in cv.experiences:
 
@@ -29,7 +29,7 @@
                 <p class="cv-experince-achievement-task">${ach.task}</p>
                 <ul class="cv-experience-achievement-results">
                 % for res in ach.results:
-                    <li>${res}</li>
+                    <li><p>${res}</p></li>
                 % endfor
                 </ul>
             </li>

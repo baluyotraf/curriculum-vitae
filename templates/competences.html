@@ -12,9 +12,9 @@
 % for comp in cv.competences:
 
     <h4 class="cv-competence-area">${comp.area}</h4>
-    <ul class="cv-competence-skills">
+    <ul class="cv-competence-skills mr-chip-list">
     % for skill in comp.skills:
-        <li>${skill}</li>
+        <li class="mr-chip">${skill}</li>
     % endfor
     </ul>
 

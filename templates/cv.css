@@ -5,14 +5,14 @@ CSS Variables
 */
 
 :root {
-    --color-primary: #00695c;
-    --color-primary-dark: #003d33;
-    --color-primary-light: #439889;
+    --color-primary: #212121;
+    --color-primary-dark: #000000;
+    --color-primary-light: #484848;
     --color-primary-text: #ffffff;
 
-    --color-secondary: #fbe9e7;
-    --color-secondary-dark: #ffffee;
-    --color-secondary-light: #ffffff;
+    --color-secondary: #ffccbc;
+    --color-secondary-dark: #cb9b8c;
+    --color-secondary-light: #ffffee;
     --color-secondary-text: #000000;
 
     --paper-width: 210mm;
@@ -22,19 +22,24 @@ CSS Variables
     --spacing-size-small: 2mm;
 
     --border-size: 0.2mm;
-    --border-color: rgba(0, 0, 0, 0.3);
-    --border-radius: 2mm;
-
-    --shadow-size: 1mm;
+    --border-color: rgba(0, 0, 0, 0.2);
+    --border-radius: 0mm;
 }
 
 
 
 * {
-    margin: 0.2mm;
     font-family: 'Roboto';
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
 
 /*
 ##############################################################################
@@ -44,11 +49,6 @@ Material
 
 .mr-card {
     border: var(--border-size) solid var(--border-color);
-    border-radius: var(--spacing-size-normal);
-    box-shadow: var(--shadow-size)
-                var(--shadow-size)
-                var(--shadow-size)
-                rgba(0, 0, 0, 0.3);
     padding: var(--spacing-size-normal);
 }
 
@@ -65,12 +65,15 @@ Material
 }
 
 .mr-chip {
-    border: var(--border-size) solid var(--border-color);
     padding: 0.5mm var(--spacing-size-normal) 0.5mm var(--spacing-size-normal);
     border-radius: var(--border-radius);
     margin: 0.5mm;
     background: var(--color-secondary);
-    color: var(--color-secondary-text)
+    color: var(--color-secondary-text);
+}
+
+.mr-chip:nth-child(even) {
+    background: var(--color-secondary-dark);
 }
 
 /*
@@ -82,8 +85,12 @@ Pages and Sections
 .cv-page {
     max-width: var(--paper-width);
     margin: auto;
-    padding: var(--spacing-size-large);
     border: 1px solid black;
+}
+
+.cv-page-content {
+    padding: var(--spacing-size-large);
+    padding-top: var(--spacing-size-normal);
 }
 
 .cv-section-header {
@@ -104,33 +111,22 @@ Timelines
 .cv-timeline {
     display: grid;
     grid-template-columns: min-content auto;
+    column-gap: 1mm;
 }
 
 .cv-timeline-time {
     grid-column: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: right;
-    padding-right: var(--spacing-size-normal);
-    margin: var(--spacing-size-normal) 0 var(--spacing-size-normal) 0;
-    border-right: 1mm solid black;
     text-transform: uppercase;
-}
-
-.cv-timeline-time::after {
-    content: "\f192";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    position: relative;
-    background: white;
-    left: 8.5mm;
-    font-size: 6mm;
+    background: var(--color-primary-light);
+    color: var(--color-primary-text);
+    padding: var(--spacing-size-normal);
 }
 
 .cv-timeline-event {
     grid-column: 2;
-    margin-left: var(--spacing-size-normal);
 }
 
 /*
@@ -141,37 +137,32 @@ Headline
 
 .cv-headline {
     display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto;
-    column-gap: 8mm;
-    margin-bottom: var(--spacing-size-normal);
+    grid-template-rows: 1f auto;
 }
 
-.cv-headline-name {
+.cv-headline-info {
     grid-row: 1;
     grid-column: 1;
-    margin-bottom: var(--spacing-size-small);
+    background: var(--color-primary);
+    color: var(--color-primary-text);
+    padding: var(--spacing-size-large)
+             var(--spacing-size-normal)
+             var(--spacing-size-normal)
+             var(--spacing-size-large);
 }
 
 .cv-headline-contacts {
-    grid-row: 1 / -1;
+    grid-row: 1;
     grid-column: 2;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-}
-
-.cv-headline-tagline {
-    grid-row: 2;
-    grid-column: 1;
-    margin-bottom: var(--spacing-size-small);
-    text-align: justify;
-}
-
-.cv-headline-summary {
-    grid-row: 3;
-    grid-column: 1;
-    text-align: justify;
+    background: var(--color-primary-dark);
+    color: var(--color-primary-text);
+    padding: var(--spacing-size-large)
+             var(--spacing-size-large)
+             var(--spacing-size-normal)
+             var(--spacing-size-normal);
 }
 
 /*
@@ -193,23 +184,9 @@ Competences
 }
 
 .cv-competence-skills {
-    list-style-type: none;
-    display: inline-flex;
-    flex-wrap: wrap;
-    padding: 0;
+    margin: 0;
 }
 
-.cv-competence-skills > li {
-    padding: 1mm var(--spacing-size-small) 1mm var(--spacing-size-small);
-}
-
-.cv-competence-skills > li:nth-child(odd) {
-    background: var(--color-secondary);
-}
-
-.cv-competence-skills > li:nth-child(even) {
-    background: var(--color-secondary-dark);
- }
 
 /*
 ##############################################################################

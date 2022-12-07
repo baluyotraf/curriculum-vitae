@@ -1,23 +1,101 @@
+/*
+##############################################################################
+CSS Variables
+##############################################################################
+*/
+
+:root {
+    --color-primary: #ffccbc;
+    --color-primary-dark: #cb9b8c;
+    --color-primary-light: #ffffee;
+    --color-primary-text: #000000;
+
+    --color-secondary: #00695c;
+    --color-secondary-dark: #003d33;
+    --color-secondary-light: #439889;
+    --color-secondary-text: #ffffff;
+
+    --paper-width: 210mm;
+
+    --spacing-size-large: 10mm;
+    --spacing-size-normal: 5mm;
+    --spacing-size-small: 2mm;
+
+    --border-size: 0.2mm;
+    --border-color: rgba(0, 0, 0, 0.3);
+    --border-radius: 2mm;
+
+    --shadow-size: 1mm;
+}
+
+
+
 * {
     margin: 0.2mm;
     font-family: 'Roboto';
-    /* border: 1px solid black; */
 }
 
-.cv-main {
-    max-width: 210mm;
+
+/*
+##############################################################################
+Material
+##############################################################################
+*/
+
+.mr-card {
+    border: var(--border-size) solid var(--border-color);
+    border-radius: var(--spacing-size-normal);
+    box-shadow: var(--shadow-size)
+                var(--shadow-size)
+                var(--shadow-size)
+                rgba(0, 0, 0, 0.3);
+    padding: var(--spacing-size-normal);
+}
+
+.mr-card-header {
+    margin-bottom: var(--spacing-size-normal);
+}
+
+
+.mr-chip-list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mr-chip {
+    border: var(--border-size) solid var(--border-color);
+    padding: 0 var(--spacing-size-normal) 0 var(--spacing-size-normal);
+    border-radius: var(--border-radius);
+}
+
+/*
+##############################################################################
+Pages and Sections
+##############################################################################
+*/
+
+.cv-page {
+    max-width: var(--paper-width);
     margin: auto;
-    padding: 10mm;
+    padding: var(--spacing-size-large);
 }
 
 .cv-section-header {
     text-align: center;
-    padding: 2mm;
+    padding: var(--spacing-size-small);
 }
 
 .cv-section-content {
-    margin: 3mm;
+    margin: var(--spacing-size-small);
 }
+
+/*
+##############################################################################
+Timelines
+##############################################################################
+*/
 
 .cv-timeline {
     display: grid;
@@ -30,9 +108,9 @@
     flex-direction: column;
     justify-content: center;
     text-align: right;
-    padding-right: 5mm;
-    margin: 5mm 0 5mm 0;
-    border-right: 0.5mm solid black;
+    padding-right: var(--spacing-size-normal);
+    margin: var(--spacing-size-normal) 0 var(--spacing-size-normal) 0;
+    border-right: 1mm solid black;
     text-transform: uppercase;
 }
 
@@ -48,21 +126,27 @@
 
 .cv-timeline-event {
     grid-column: 2;
-    margin-left: 5mm;
+    margin-left: var(--spacing-size-normal);
 }
+
+/*
+##############################################################################
+Headline
+##############################################################################
+*/
 
 .cv-headline {
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: auto auto;
     column-gap: 8mm;
-    margin-bottom: 5mm;
+    margin-bottom: var(--spacing-size-normal);
 }
 
 .cv-headline-name {
     grid-row: 1;
     grid-column: 1;
-    margin-bottom: 2mm;
+    margin-bottom: var(--spacing-size-small);
 }
 
 .cv-headline-contacts {
@@ -76,7 +160,7 @@
 .cv-headline-tagline {
     grid-row: 2;
     grid-column: 1;
-    margin-bottom: 2mm;
+    margin-bottom: var(--spacing-size-small);
     text-align: justify;
 }
 
@@ -86,11 +170,17 @@
     text-align: justify;
 }
 
+/*
+##############################################################################
+Competences
+##############################################################################
+*/
+
 .cv-competences {
     display: grid;
     grid-template-columns: 60mm 1fr;
-    column-gap: 5mm;
-    row-gap: 1mm;
+    column-gap: var(--spacing-size-normal);
+    row-gap: var(--spacing-size-small);
 }
 
 .cv-competence-area {
@@ -105,7 +195,7 @@
 }
 
 .cv-competence-skills > li {
-    margin-left: 2mm;
+    margin-left: var(--spacing-size-small);
 }
 
 .cv-competence-skills > li::after {
@@ -116,8 +206,15 @@
     content: "";
 }
 
+
+/*
+##############################################################################
+Experiences
+##############################################################################
+*/
+
 .cv-experience-achievements {
-    margin-bottom: 5mm;
+    margin-bottom: var(--spacing-size-normal);
 }
 
 .cv-experience-achievement-results {
@@ -126,6 +223,12 @@
     font-style: italic;
 }
 
+/*
+##############################################################################
+Projects
+##############################################################################
+*/
+
 .cv-project-description {
-    margin-bottom: 5mm;
+    margin-bottom: var(--spacing-size-normal);
 }

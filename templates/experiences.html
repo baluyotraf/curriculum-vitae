@@ -1,0 +1,53 @@
+<section class="cv-section">
+
+<h2 class="cv-section-header">
+    <i class="fa-solid fa-briefcase"></i>
+    <text>Professional Experience</text>
+</h2>
+
+% for exp in cv.experiences:
+
+<article class="cv-experience cv-timeline cv-section-content">
+
+<div class="cv-timeline-time">
+    <text>${exp.end_date}</text>
+    <text>${exp.start_date}</text>
+</div>
+
+<div class="mr-card cv-timeline-event">
+
+    <div class="mr-card-header">
+        <h4>${exp.title}</h4>
+        <h5>${exp.company}, ${exp.country}</h5>
+    </div>
+
+    <div class="mr-card-content">
+
+        <ul class="cv-experience-achievements">
+        % for ach in exp.achievements:
+            <li>
+                <p class="cv-experince-achievement-task">${ach.task}</p>
+                <ul class="cv-experience-achievement-results">
+                % for res in ach.results:
+                    <li>${res}</li>
+                % endfor
+                </ul>
+            </li>
+        % endfor
+        </ul>
+
+        <ul class="mr-chip-list">
+        % for skill in exp.skills:
+            <li class="mr-chip">${skill}</li>
+        % endfor
+        </ul>
+
+    </div>
+
+</div>
+
+</article>
+
+% endfor
+
+</section>

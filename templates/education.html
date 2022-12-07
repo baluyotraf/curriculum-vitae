@@ -1,0 +1,34 @@
+<section class="cv-section">
+
+<h2 class="cv-section-header">
+    <i class="fa-solid fa-building-columns"></i>
+    <text>Education</text>
+</h2>
+
+% for edu in cv.education:
+
+<article class="cv-education cv-timeline cv-section-content">
+
+<div class="cv-timeline-time">
+    <text>${edu.start_date}</text>
+    <text>${edu.end_date}</text>
+</div>
+
+<div class="mr-card cv-timeline-event">
+
+    <div class="mr-card-header">
+        <h4>${edu.degree} in ${edu.program}</h4>
+        <h5>${edu.institution}</h5>
+    </div>
+
+    <div class="mr-card-content">
+        <p class="cv-education-details">${edu.details}</p>
+    </div>
+
+</div>
+
+</article>
+
+% endfor
+
+</section>

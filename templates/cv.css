@@ -68,6 +68,7 @@ Material
     border: var(--border-size) solid var(--border-color);
     padding: 0 var(--spacing-size-normal) 0 var(--spacing-size-normal);
     border-radius: var(--border-radius);
+    margin: 0.5mm;
 }
 
 /*

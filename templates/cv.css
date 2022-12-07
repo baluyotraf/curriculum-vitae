@@ -1,123 +1,257 @@
-* {
-    margin: 0.2mm;
-    font-family: 'Roboto';
-    /* border: 1px solid black; */
+/*
+##############################################################################
+CSS Variables
+##############################################################################
+*/
+
+:root {
+    --color-primary: #4e342e;
+    --color-primary-dark: #260e04;
+    --color-primary-light: #7b5e57;
+    --color-primary-text: #ffffff;
+
+    --color-secondary: #ffccbc;
+    --color-secondary-dark: #e9ccc3;
+    --color-secondary-light: #ffffee;
+    --color-secondary-text: #000000;
+
+    --paper-width: 210mm;
+
+    --spacing-size-large: 10mm;
+    --spacing-size-normal: 5mm;
+    --spacing-size-small: 2mm;
+
+    --border-size: 0.2mm;
+    --border-color: rgba(0, 0, 0, 0.2);
+    --border-radius: 0mm;
+
+    --font-primary: "Noto Sans JP";
+    --font-secondary: "Maven Pro";
 }
 
-.cv-main {
-    max-width: 210mm;
+h1 {
+    font-family: var(--font-primary);
+    font-size: 10mm;
+    font-weight: 300;
+    margin: 1mm 0 2mm 0;
+}
+
+h2 {
+    font-family: var(--font-primary);
+    font-size: 6mm;
+    font-weight: 500;
+    margin: 1mm 0 2mm 0;
+}
+
+h3 {
+    font-family: var(--font-primary);
+    font-size: 6mm;
+    font-weight: 700;
+    margin: 1mm 0 2mm 0;
+}
+
+h4 {
+    font-family: var(--font-primary);
+    font-size: 4.5mm;
+    font-weight: 500;
+    margin: 1mm 0 1.5mm 0;
+}
+
+h5 {
+    font-family: var(--font-primary);
+    font-size: 4mm;
+    font-weight: 500;
+    margin: 1mm 0 1mm 0;
+}
+
+p {
+    font-family: var(--font-secondary);
+    font-size: 4mm;
+    margin: 0;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+##############################################################################
+Material
+##############################################################################
+*/
+
+.mr-card {
+    border: var(--border-size) solid var(--border-color);
+    padding: var(--spacing-size-normal);
+}
+
+.mr-card-header {
+    margin-bottom: var(--spacing-size-normal);
+}
+
+
+.mr-chip-list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mr-chip {
+    padding: 0.5mm var(--spacing-size-normal) 1mm var(--spacing-size-normal);
+    border-radius: var(--border-radius);
+    margin: 0.5mm;
+    background: var(--color-secondary);
+    color: var(--color-secondary-text);
+    font-family: var(--font-secondary);
+    font-size: 4.5mm;
+}
+
+.mr-chip:nth-child(even) {
+    background: var(--color-secondary-dark);
+}
+
+/*
+##############################################################################
+Pages and Sections
+##############################################################################
+*/
+
+.cv-page {
+    max-width: var(--paper-width);
     margin: auto;
-    padding: 10mm;
+    border: 1px solid black;
+}
+
+.cv-page-content {
+    padding: var(--spacing-size-large);
+    padding-top: var(--spacing-size-normal);
 }
 
 .cv-section-header {
     text-align: center;
-    padding: 2mm;
+    padding: var(--spacing-size-small);
 }
 
 .cv-section-content {
-    margin: 3mm;
+    margin: var(--spacing-size-small);
 }
+
+/*
+##############################################################################
+Timelines
+##############################################################################
+*/
 
 .cv-timeline {
     display: grid;
     grid-template-columns: min-content auto;
+    column-gap: 1mm;
 }
 
 .cv-timeline-time {
     grid-column: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: right;
-    padding-right: 5mm;
-    margin: 5mm 0 5mm 0;
-    border-right: 0.5mm solid black;
     text-transform: uppercase;
+    background: var(--color-primary-light);
+    color: var(--color-primary-text);
+    border: var(--border-size) solid var(--border-color);
+    padding: var(--spacing-size-normal);
+    padding-top: calc(var(--spacing-size-normal) + 2mm);
+    font-family: var(--font-secondary);
+    font-size: 3.5mm;
+    font-weight: 900;
 }
 
-.cv-timeline-time::after {
-    content: "\f192";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    position: relative;
-    background-color: white;
-    left: 8.5mm;
-    font-size: 6mm;
+.cv-timeline-time > * {
+    margin-bottom: 1mm;
 }
 
 .cv-timeline-event {
     grid-column: 2;
-    margin-left: 5mm;
 }
+
+/*
+##############################################################################
+Headline
+##############################################################################
+*/
 
 .cv-headline {
     display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto;
-    column-gap: 8mm;
-    margin-bottom: 5mm;
+    grid-template-rows: 1f auto;
 }
 
-.cv-headline-name {
+.cv-headline-info {
     grid-row: 1;
     grid-column: 1;
-    margin-bottom: 2mm;
+    background: var(--color-primary);
+    color: var(--color-primary-text);
+    padding: var(--spacing-size-large)
+             var(--spacing-size-normal)
+             var(--spacing-size-normal)
+             var(--spacing-size-large);
+}
+
+.cv-headline-summary {
+    font-family: var(--font-secondary);
+    font-size: 4.5mm;
 }
 
 .cv-headline-contacts {
-    grid-row: 1 / -1;
+    grid-row: 1;
     grid-column: 2;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    background: var(--color-primary-dark);
+    color: var(--color-primary-text);
+    padding: var(--spacing-size-large)
+             var(--spacing-size-large)
+             var(--spacing-size-normal)
+             var(--spacing-size-normal);
+    font-family: var(--font-secondary);
 }
 
-.cv-headline-tagline {
-    grid-row: 2;
-    grid-column: 1;
-    margin-bottom: 2mm;
-    text-align: justify;
+.cv-headline-contacts > span,
+.cv-headline-contacts > a {
+    margin: 1mm 0 1mm 0;
 }
 
-.cv-headline-summary {
-    grid-row: 3;
-    grid-column: 1;
-    text-align: justify;
-}
+/*
+##############################################################################
+Competences
+##############################################################################
+*/
 
 .cv-competences {
     display: grid;
     grid-template-columns: 60mm 1fr;
-    column-gap: 5mm;
-    row-gap: 1mm;
+    column-gap: var(--spacing-size-normal);
+    row-gap: var(--spacing-size-small);
 }
 
 .cv-competence-area {
     text-align: right;
+    margin: auto 0 auto 0;
 }
 
 .cv-competence-skills {
-    list-style-type: none;
-    display: inline-flex;
-    flex-wrap: wrap;
-    padding: 0;
+    margin: 0;
 }
 
-.cv-competence-skills > li {
-    margin-left: 2mm;
-}
 
-.cv-competence-skills > li::after {
-    content: ", ";
-}
-
-.cv-competence-skills :last-child::after {
-    content: "";
-}
+/*
+##############################################################################
+Experiences
+##############################################################################
+*/
 
 .cv-experience-achievements {
-    margin-bottom: 5mm;
+    margin-bottom: var(--spacing-size-normal);
 }
 
 .cv-experience-achievement-results {
@@ -126,6 +260,12 @@
     font-style: italic;
 }
 
+/*
+##############################################################################
+Projects
+##############################################################################
+*/
+
 .cv-project-description {
-    margin-bottom: 5mm;
+    margin-bottom: var(--spacing-size-normal);
 }

@@ -17,9 +17,11 @@ class BasicInfo(BaseModel):
 
     linkedin: str
     github: str
+    website: str
     phone: str
     email: str
     address: str
+
 
     summary: str
 

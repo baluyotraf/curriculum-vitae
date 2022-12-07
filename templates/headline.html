@@ -1,6 +1,13 @@
 <section class="cv-headline">
-    <h1 class="cv-headline-name">${cv.headline.name}</h1>
+
+    <div class="cv-headline-info">
+        <h1 class="cv-headline-name">${cv.headline.name}</h1>
+        <h2 class="cv-headline-tagline">${cv.headline.tagline}</h2>
+        <p class="cv-headline-summary">${cv.headline.summary}</p>
+    </div>
+
     <div class="cv-headline-contacts">
+
         <a href="https://www.linkedin.com/in/${cv.headline.linkedin}/">
             <i class="fa-brands fa-linkedin"></i>
             <text>${cv.headline.linkedin}</text>
@@ -8,6 +15,10 @@
         <a href="https://github.com/${cv.headline.github}">
             <i class="fa-brands fa-github"></i>
             <text>${cv.headline.github}</text>
+        </a>
+        <a href="${cv.headline.website}">
+            <i class="fa-brands fa-firefox-browser"></i>
+            <text>${cv.headline.website}</text>
         </a>
         <span>
             <i class="fa-solid fa-mobile"></i>
@@ -21,8 +32,6 @@
             <i class="fa-solid fa-location-dot"></i>
             <text>${cv.headline.address}</text>
         </span>
-    </div>
 
-    <h2 class="cv-headline-tagline">${cv.headline.tagline}</h2>
-    <p class="cv-headline-summary">${cv.headline.summary}</p>
+    </div>
 </section>

@@ -23,4 +23,7 @@ def generate(input, output):
     render_template(input, os.path.join(output, 'index.html'))
 
     for css in glob.glob(os.path.join(TEMPLATE_PATH, '*.css')):
-        shutil.copy2(css, output)
+        try:
+            shutil.copy2(css, output)
+        except shutil.SameFileError:
+            pass

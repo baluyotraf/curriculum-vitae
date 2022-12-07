@@ -5,15 +5,15 @@ CSS Variables
 */
 
 :root {
-    --color-primary: #ffccbc;
-    --color-primary-dark: #cb9b8c;
-    --color-primary-light: #ffffee;
-    --color-primary-text: #000000;
+    --color-primary: #00695c;
+    --color-primary-dark: #003d33;
+    --color-primary-light: #439889;
+    --color-primary-text: #ffffff;
 
-    --color-secondary: #00695c;
-    --color-secondary-dark: #003d33;
-    --color-secondary-light: #439889;
-    --color-secondary-text: #ffffff;
+    --color-secondary: #fbe9e7;
+    --color-secondary-dark: #ffffee;
+    --color-secondary-light: #ffffff;
+    --color-secondary-text: #000000;
 
     --paper-width: 210mm;
 
@@ -66,9 +66,11 @@ Material
 
 .mr-chip {
     border: var(--border-size) solid var(--border-color);
-    padding: 0 var(--spacing-size-normal) 0 var(--spacing-size-normal);
+    padding: 0.5mm var(--spacing-size-normal) 0.5mm var(--spacing-size-normal);
     border-radius: var(--border-radius);
     margin: 0.5mm;
+    background: var(--color-secondary);
+    color: var(--color-secondary-text)
 }
 
 /*
@@ -81,6 +83,7 @@ Pages and Sections
     max-width: var(--paper-width);
     margin: auto;
     padding: var(--spacing-size-large);
+    border: 1px solid black;
 }
 
 .cv-section-header {
@@ -120,7 +123,7 @@ Timelines
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     position: relative;
-    background-color: white;
+    background: white;
     left: 8.5mm;
     font-size: 6mm;
 }
@@ -186,6 +189,7 @@ Competences
 
 .cv-competence-area {
     text-align: right;
+    margin: auto 0 auto 0;
 }
 
 .cv-competence-skills {
@@ -196,17 +200,16 @@ Competences
 }
 
 .cv-competence-skills > li {
-    margin-left: var(--spacing-size-small);
+    padding: 1mm var(--spacing-size-small) 1mm var(--spacing-size-small);
 }
 
-.cv-competence-skills > li::after {
-    content: ", ";
+.cv-competence-skills > li:nth-child(odd) {
+    background: var(--color-secondary);
 }
 
-.cv-competence-skills :last-child::after {
-    content: "";
-}
-
+.cv-competence-skills > li:nth-child(even) {
+    background: var(--color-secondary-dark);
+ }
 
 /*
 ##############################################################################

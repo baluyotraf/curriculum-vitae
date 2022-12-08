@@ -3,7 +3,6 @@ name: ci
 on:
   push:
     branches:
-      - actions
       - master
       - main
 
@@ -25,5 +24,4 @@ jobs:
           git config --local user.name "GitHub Action"
           git add -A
           git commit -m "deploy"
-          echo "https://${{ github.repository_owner }}:${{ github.token }}@github.com/${{ github.repository }}.git"
           git push -f "https://${{ github.repository_owner }}:${{ github.token }}@github.com/${{ github.repository }}.git" master:gh-pages

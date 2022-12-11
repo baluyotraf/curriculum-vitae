@@ -13,9 +13,9 @@ headline:
     A machine learning engineer who is proficient in Deep Learning,
     Machine Learning, and Software Engineering. Exploring research ideas and
     developing software products has been his role for eight years, bridging
-    the gap between research and development or both. Passionate about sharing
-    his knowledge leading him to work with university courses and open source
-    development.
+    the gap between research and development or working on both. Passionate
+    about sharing his knowledge leading him to work with university courses
+    and open source projects.
 
 competences:
   - area: Programming Languages
@@ -54,35 +54,105 @@ competences:
 
 experiences:
   - title: Embedded Machine Learning Engineer
-    company: Autoliv AB
-    consulting_company: LuunaX AB
+    company: Autoliv - Research
+    consulting_company: LuunaX
     country: Sweden
     start_date: 2022-06-01
     end_date: present
     achievements:
       - task: >-
-          Researched and developed a classifier for escooter rider interaction
-          with the handle bar.
+          Architected, designed, and developed components of the Autoliv Cloud
+          Safety Platform (ACSP) to collect and save data from different
+          research activities and partner companies.
         result: >-
-            Research team used the model to perform behavior analysis on the
-            rider.
+          Current iteration of the ACSP is running and is processing more
+          than 50GB of research data per day.
       - task: >-
-          Designed and developed an Android App and Android SDK for collecting
-          research data.
+          Designed and developed Android App and SDK to enable researchers
+          and partner companies to integrate with the ACSP.
+        result: >-
+          Initial version of the App and SDK were released internally.
       - task: >-
-          Researched analytical and machine learning algorithms for crash
-          detection.
+          Researched electric scooter kinematics and video data to analyze
+          driver behavior and driver interactions with other pedestrians as
+          part of the e-Safe initiative of the European Union.
+        result: >-
+          Research write-ups on handlebar interaction, pedestrian detection,
+          and pedestrian position projection were being written to summarize
+          the results.
     skills:
       - Python
       - Kotlin
       - TensorFlow
-      - Azure Functions
       - Docker
       - SQL Server
       - Azure ML
       - Azure Devops
+      - Azure Storage
+      - Azure Functions
       - Android
       - Jetpack Compose
+
+  - title: Machine Learning Engineer
+    company: Volvo Group Trucks Technology - Electromobility Data Analytics
+    consulting_company: LuunaX
+    country: Sweden
+    start_date: 2021-10-01
+    end_date: 2022-05-01
+    achievements:
+      - task: >-
+          Designed and developed a library and tool for processing high
+          frequency vehicle logs.
+        result: >-
+          Data teams from other organization used the tool for creating their
+          analysis and reports.
+      - task: >-
+          Designed and developed visual tools for monitoring vehicle faults
+          and fault interactions.
+        result: >-
+          The tool highlighted 2 faults during electric truck development and
+          was made available to all the system teams.
+      - task: >-
+          Designed and developed visual tools to show battery charging
+          performance and behaviors.
+        result: >-
+          The tool was used by the charging team to ensure that the current
+          charging performance meets the customer requirements.
+      - task: >-
+          Researched clustering applications to find different kinds of
+          battery charging behaviors.
+    skills:
+      - Python
+      - SQL
+      - Scikit-Learn
+      - Spark
+      - PostgreSQL
+      - SQL Server
+      - PowerBI
+
+  - title: AI Consultant
+    company: >-
+      Central Bicol State University of Agriculture - Research Division Office
+    country: Philippines
+    start_date: 2021-08-01
+    end_date: 2022-04-01
+    achievements:
+      - task: Analyzed the entire research process and requirements.
+        result: A technical road-map for the project was developed.
+      - task: >-
+          Evaluated existing, and developed a new data gathering and
+          evaluation strategy.
+        result: Team was able to expand the number of raw data 25 times.
+      - task: >-
+          Mentored the researchers in development of tree (Canarium ovatum)
+          classifier.
+        result: >-
+          A classifier meeting the target goals was developed, the feasibility
+          of the research was validated, and the research moved to the next
+          step.
+    skills:
+      - Python
+      - TensorFlow
 
   - title: Faculty
     company: Mapúa University - School of EECE
@@ -134,7 +204,8 @@ experiences:
           Developed frameworks for creating different extract, transform, load
           (ETL) projects.
         result: >-
-          The quantitative research and data operations teams used the framework to move research projects into production operations.
+          The quantitative research and data operations teams used the
+          framework to move research projects into production operations.
       - task: >-
           Researched and developed trading strategies from different concepts
           of liquidity.
@@ -145,7 +216,8 @@ experiences:
           Researched and explored other strategies on equities, futures, ETFs,
           sectors, and risks.
         result: >-
-          Quick research cycles, with initial results from 1-2 weeks of the research conceptualization.
+          Quick research cycles, with initial results from 1-2 weeks of the
+          research conceptualization.
     skills:
       - Python
       - C++
@@ -173,9 +245,11 @@ experiences:
           Designed and developed a machine learning model for image file
           malware detection.
         result: >-
-          The model was deployed in production as part of the larger malware detection pipeline.
+          The model was deployed in production as part of the larger malware
+          detection pipeline.
       - task: >-
-          Researched machine learning malware classifiers based on system logs and file metadata.
+          Researched machine learning malware classifiers based on system logs
+          and file metadata.
         result: >-
           The model was not stable as desired and the conclusion was that
           additional metadata were needed to improve stability.
@@ -287,15 +361,19 @@ experiences:
     end_date: 2017-01-01
     achievements:
       - task: >-
-          Architected, designed, and developed FMI integration to CRAMAS ECU testing tool.
+          Architected, designed, and developed FMI integration to CRAMAS ECU
+          testing tool.
         result: >-
-          CRAMAS Tool was able to integrate FMI compliant models from various vendors in simulation.
+          CRAMAS Tool was able to integrate FMI compliant models from various
+          vendors in simulation.
       - task: >-
           Designed, and developed virtual ECU simulation in CRAMAS.
         result: >-
-          CRAMAS Tool and Virtual ECU prototypes showed feasibility and the project moved to next phase.
+          CRAMAS Tool and Virtual ECU prototypes showed feasibility and the
+          project moved to next phase.
       - task: >-
-          Maintained CRAMAS Auto Test Tool, a tool for creating test cases for automotive hardware simulation.
+          Maintained CRAMAS Auto Test Tool, a tool for creating test cases for
+          automotive hardware simulation.
         result: >-
           CRAMAS Auto Test Tool received 10-20 bug fixes and performance
           improvements each quarter.
@@ -324,7 +402,8 @@ experiences:
       - task: >-
           Represented the team in Phil-LiDAR 2 Luzon Cluster Colloquium.
         result: >-
-          Presented the topic: Development of End-to-End Image Processing Pipeline for Resource Mapping.
+          Presented the topic: Development of End-to-End Image Processing
+          Pipeline for Resource Mapping.
     skills:
       - Python
       - C#
@@ -407,7 +486,7 @@ education:
 
       Specialization: Microsoft .NET Technology
 
-      Design Project: On-device Portable Leaf Recognition Device with GPS
+      Design Project: Portable On-device Leaf Recognition Device with GPS
       Capability Using Artificial Neural Network
     start_date: 2010-07-01
     end_date: 2015-09-01

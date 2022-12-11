@@ -31,7 +31,7 @@ competences:
       - NLP
   - area: Data Science libraries
     skills:
-      - Tensorflow
+      - TensorFlow
       - Scikit-Learn
       - Pandas
       - Numpy
@@ -75,7 +75,7 @@ experiences:
     skills:
       - Python
       - Kotlin
-      - Tensorflow
+      - TensorFlow
       - Azure Functions
       - Docker
       - SQL Server
@@ -83,6 +83,77 @@ experiences:
       - Azure Devops
       - Android
       - Jetpack Compose
+
+  - title: AI Engineer
+    company: Innovantage Inc. - Research
+    country: Philippines
+    start_date: 2018-04-01
+    end_date: 2018-11-01
+    achievements:
+      - task: >-
+          Architected, designed, and developed a chat bot framework supporting
+          multiple chat platforms.
+        result: >-
+          All company chat bot offerings were ported or were created using the
+          library.
+      - task: >-
+          Researched, and developed a machine learning model for GUI
+          classification.
+        result: >-
+          The model showed feasibility and a vision-based automation product
+          development started.
+      - task: >-
+          Researched NLP models on intent recognition, sentiment analysis, and
+          phrase similarity.
+        result:
+          Developed English and Filipino models beat the performance of models
+          of research partners.
+    skills:
+      - Python
+      - TensorFlow
+      - Scikit-Learn
+      - AWS EC2
+      - Docker
+      - Facebook Messenger
+
+  - title: Senior Data Scientist
+    company: Adatos Inc.
+    country: Philippines
+    start_date: 2017-02-01
+    end_date: 2018-01-01
+    achievements:
+      - task: >-
+          Researched, and developed machine learning algorithm for tree cover
+          monitoring.
+        result: >-
+          The contracts secured with government units and insurance firms
+          moved the company focus towards remote sensing.
+      - task: >-
+          Architected, designed, and developed a cloud-based remote sensing
+          GIS plug-in.
+        result: >-
+          The plugin was pitched to a cloud vendor who became a partner in
+          selling the full solution.
+      - task: >-
+          Designed, and developed a backtesting and trading library for stock
+          market trading research.
+        result: >-
+          The library was praised and used by internal researchers.
+      - task: >-
+          Design, and developed microservices for providing a credit scoring
+          service to a client.
+        result: >-
+          The project reached the algorithm testing phase, processing
+          thousands of credit applications per day.
+    skills:
+      - Python
+      - PHP
+      - TensorFlow
+      - Scikit-Learn
+      - Laravel
+      - Flask
+      - AWS EC2
+      - Docker
 
   - title: System Engineer
     company: Denso Ten Solutions Philippines - Automotive Electronics
@@ -149,7 +220,7 @@ projects:
     end_date: 2021-09-01
     skills:
       - Python
-      - Tensorflow
+      - TensorFlow
       - OpenCV
       - Scikit-Image
 
@@ -164,7 +235,7 @@ projects:
     end_date: 2019-10-01
     skills:
       - Python
-      - Tensorflow
+      - TensorFlow
 
   - title: Rice Health Classifier
     description: >-
@@ -177,7 +248,7 @@ projects:
     end_date: 2019-07-01
     skills:
       - Python
-      - Tensorflow
+      - TensorFlow
 
   - title: Sandpaper Granularity
     description: >-

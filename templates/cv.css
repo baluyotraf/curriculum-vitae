@@ -164,6 +164,8 @@ Timelines
     font-family: var(--font-secondary);
     font-size: 3.5mm;
     font-weight: 900;
+    white-space: nowrap;
+    width: 17mm;
 }
 
 .cv-timeline-time > * {
@@ -254,10 +256,17 @@ Experiences
     margin-bottom: var(--spacing-size-normal);
 }
 
-.cv-experience-achievement-results {
-    list-style-type: none;
-    padding: 0;
+.cv-experience-achievement-task {
+    font-weight: 700;
+}
+
+.cv-experience-achievement-result {
+    font-weight: 500;
     font-style: italic;
+}
+
+.cv-experience-subtitle > i {
+    margin-right: var(--spacing-size-small);
 }
 
 /*

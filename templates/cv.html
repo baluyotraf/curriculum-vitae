@@ -1,3 +1,11 @@
+<%def name="format_date(date)">
+    % if isinstance(date, str):
+        ${date}
+    % else:
+        ${date.strftime('%Y %b')}
+    % endif
+</%def>
+
 <!DOCTYPE html>
 <html>
 

@@ -11,10 +11,11 @@ headline:
   address: Gothenburg, Sweden
   summary: >-
     A machine learning engineer who is proficient in Deep Learning,
-    Machine Learning, and Software Engineering. A open-source contributor
-    with minor contributions to several data libraries such as Scikit-Learn,
-    Pandas-Profiling, PyGMO, etc. A highly curious individual that engages in
-    research and academic works.
+    Machine Learning, and Software Engineering. Exploring research ideas and
+    developing software products has been his role for eight years, bridging
+    the gap between research and development or working on both. Passionate
+    about sharing his knowledge leading him to work with university courses
+    and open source projects.
 
 competences:
   - area: Programming Languages
@@ -22,12 +23,15 @@ competences:
       - Python
       - Kotlin
       - Bash
-      - C
-      - C++
       - SQL
+  - area: Machine Learning Areas
+    skills:
+      - Vision
+      - High Frequency
+      - NLP
   - area: Data Science libraries
     skills:
-      - Tensorflow
+      - TensorFlow
       - Scikit-Learn
       - Pandas
       - Numpy
@@ -38,74 +42,451 @@ competences:
       - Azure ML
   - area: Data Stores
     skills:
-      - Azure Blob Storage
+      - Relational Database
       - HDFS
-      - MySQL
-      - SQL Server
-      - PostgreSQL
       - Redis
-  - area: Deployment and Platforms
+  - area: Deployment and Operations
     skills:
       - Git
       - Linux
       - Docker
-      - GilabCI
-      - Ansible
+      - Github Action
 
 experiences:
   - title: Embedded Machine Learning Engineer
-    company: Autoliv AB
+    company: Autoliv - Research
+    consulting_company: LuunaX
     country: Sweden
     start_date: 2022-06-01
     end_date: present
     achievements:
       - task: >-
-          Researched and developed a classifier for escooter rider interaction
-          with the handle bar.
-        results:
-          - >-
-            Research team used the model to perform behavior analysis on the
-            rider.
+          Architected, designed, and developed components of the Autoliv Cloud
+          Safety Platform (ACSP) to collect and save data from different
+          research activities and partner companies.
+        result: >-
+          Current iteration of the ACSP is running and is processing more
+          than 50GB of research data per day.
       - task: >-
-          Designed and developed an Android App and Android SDK for collecting
-          research data.
-        results: []
+          Designed and developed Android App and SDK to enable researchers
+          and partner companies to integrate with the ACSP.
+        result: >-
+          Initial version of the App and SDK were released internally.
       - task: >-
-          Researched analytical and machine learning algorithms for crash
-          detection.
-        results: []
+          Researched electric scooter kinematics and video data to analyze
+          driver behavior and driver interactions with other pedestrians as
+          part of the e-Safe initiative of the European Union.
+        result: >-
+          Research write-ups on handlebar interaction, pedestrian detection,
+          and pedestrian position projection were being written to summarize
+          the results.
     skills:
       - Python
       - Kotlin
-      - Tensorflow
-      - Azure Functions
+      - TensorFlow
       - Docker
       - SQL Server
       - Azure ML
       - Azure Devops
+      - Azure Storage
+      - Azure Functions
       - Android
       - Jetpack Compose
+
+  - title: Machine Learning Engineer
+    company: Volvo Group Trucks Technology - Electromobility Data Analytics
+    consulting_company: LuunaX
+    country: Sweden
+    start_date: 2021-10-01
+    end_date: 2022-05-01
+    achievements:
+      - task: >-
+          Designed and developed a library and tool for processing high
+          frequency vehicle logs.
+        result: >-
+          Data teams from other organization used the tool for creating their
+          analysis and reports.
+      - task: >-
+          Designed and developed visual tools for monitoring vehicle faults
+          and fault interactions.
+        result: >-
+          The tool highlighted 2 faults during electric truck development and
+          was made available to all the system teams.
+      - task: >-
+          Designed and developed visual tools to show battery charging
+          performance and behaviors.
+        result: >-
+          The tool was used by the charging team to ensure that the current
+          charging performance meets the customer requirements.
+      - task: >-
+          Researched clustering applications to find different kinds of
+          battery charging behaviors.
+    skills:
+      - Python
+      - SQL
+      - Scikit-Learn
+      - Spark
+      - PostgreSQL
+      - SQL Server
+      - PowerBI
+
+  - title: AI Consultant
+    company: >-
+      Central Bicol State University of Agriculture - Research Division Office
+    country: Philippines
+    start_date: 2021-08-01
+    end_date: 2022-04-01
+    achievements:
+      - task: Analyzed the entire research process and requirements.
+        result: A technical road-map for the project was developed.
+      - task: >-
+          Evaluated existing, and developed a new data gathering and
+          evaluation strategy.
+        result: Team was able to expand the number of raw data 25 times.
+      - task: >-
+          Mentored the researchers in development of tree (Canarium ovatum)
+          classifier.
+        result: >-
+          A classifier meeting the target goals was developed, the feasibility
+          of the research was validated, and the research moved to the next
+          step.
+    skills:
+      - Python
+      - TensorFlow
+
+  - title: Faculty
+    company: Mapúa University - School of EECE
+    country: Philippines
+    start_date: 2019-02-01
+    end_date: 2022-02-01
+    achievements:
+      - task: |-
+          Developed lessons and syllabi, and handled the following courses:
+          - Neural Networks
+          - Digital Image Processing
+          - Natural Language Processing
+      - task: |-
+          Handled the following courses:
+          - Advance Computer Architecture and Organization
+          - Design of Digital Systems and Computers
+    skills:
+      - Python
+      - TensorFlow
+      - OpenCV
+      - NLTK
+
+  - title: Machine Learning Engineer
+    company: Phitopolis Inc. - Quantitative Research
+    country: Philippines
+    start_date: 2019-08-01
+    end_date: 2021-07-01
+    achievements:
+      - task: >-
+          Redesigned, and redeveloped the alpha performance tool used for
+          evaluation of trading signals.
+        result: >-
+          New alpha performance tool was 1.5 to 2 times faster, had a more
+          modular code base, was the dependency of internal tools, and was
+          used in the entire company.
+      - task: >-
+          Designed, and developed a tool to determine the contribution of
+          individual models to the ensemble.
+        result: >-
+          Executives relied on the tool results to evaluate the performance of
+          the current trading strategy.
+      - task: >-
+          Designed, and developed a tool to visualize the quality of
+          structured data.
+        result: >-
+          The quantitative research and data operations teams used the tool to
+          validate new and updated data streams.
+      - task: >-
+          Developed frameworks for creating different extract, transform, load
+          (ETL) projects.
+        result: >-
+          The quantitative research and data operations teams used the
+          framework to move research projects into production operations.
+      - task: >-
+          Researched and developed trading strategies from different concepts
+          of liquidity.
+        result: >-
+          The trading strategy result was integrated as one of the part of the
+          company trading strategy.
+      - task: >-
+          Researched and explored other strategies on equities, futures, ETFs,
+          sectors, and risks.
+        result: >-
+          Quick research cycles, with initial results from 1-2 weeks of the
+          research conceptualization.
+    skills:
+      - Python
+      - C++
+      - R
+      - TensorFlow
+      - PyGMO
+      - Scikit-Learn
+      - LGBM
+      - Sun Grid Engine
+      - Gitlab CI
+
+  - title: Data Science Engineer
+    company: Trend Micro Inc. - Anti False Positive
+    country: Philippines
+    start_date: 2018-11-01
+    end_date: 2019-08-01
+    achievements:
+      - task: >-
+          Architected, designed, and developed a framework for deploying
+          malware detection services.
+        result: >-
+          Machine learning models and analytical algorithms developed by the
+          team were deployed to production using the framework.
+      - task: >-
+          Designed and developed a machine learning model for image file
+          malware detection.
+        result: >-
+          The model was deployed in production as part of the larger malware
+          detection pipeline.
+      - task: >-
+          Researched machine learning malware classifiers based on system logs
+          and file metadata.
+        result: >-
+          The model was not stable as desired and the conclusion was that
+          additional metadata were needed to improve stability.
+
+    skills:
+      - Python
+      - TensorFlow
+      - AWS EC2
+      - AWS Athena
+      - AWS SQS
+      - AWS S3
+
+  - title: Faculty
+    company: Adamson University - School of Engineering
+    country: Philippines
+    start_date: 2018-08-01
+    end_date: 2018-12-01
+    achievements:
+      - task: |-
+          Developed lessons and syllabi, and handled the following courses:
+          - Web Development
+          - Database Design
+    skills:
+      - Python
+      - HTML
+      - CSS
+      - JavaScript
+      - SQL
+      - Flask
+      - Vue.js
+      - Docker
+      - MySQL
+
+  - title: AI Engineer
+    company: Innovantage Inc. - Research
+    country: Philippines
+    start_date: 2018-04-01
+    end_date: 2018-11-01
+    achievements:
+      - task: >-
+          Architected, designed, and developed a chat bot framework supporting
+          multiple chat platforms.
+        result: >-
+          All company chat bot offerings were ported or were created using the
+          library.
+      - task: >-
+          Researched, and developed a machine learning model for GUI
+          classification.
+        result: >-
+          The model showed feasibility and a vision-based automation product
+          development started.
+      - task: >-
+          Researched NLP models on intent recognition, sentiment analysis, and
+          phrase similarity.
+        result:
+          Developed English and Filipino models beat the performance of models
+          of research partners.
+    skills:
+      - Python
+      - TensorFlow
+      - Scikit-Learn
+      - AWS EC2
+      - Docker
+      - Facebook Messenger
+
+  - title: Senior Data Scientist
+    company: Adatos Inc.
+    country: Philippines
+    start_date: 2017-02-01
+    end_date: 2018-01-01
+    achievements:
+      - task: >-
+          Researched, and developed machine learning algorithm for tree cover
+          monitoring.
+        result: >-
+          The contracts secured with government units and insurance firms
+          moved the company focus towards remote sensing.
+      - task: >-
+          Architected, designed, and developed a cloud-based remote sensing
+          GIS plug-in.
+        result: >-
+          The plugin was pitched to a cloud vendor who became a partner in
+          selling the full solution.
+      - task: >-
+          Designed, and developed a backtesting and trading library for stock
+          market trading research.
+        result: >-
+          The library was praised and used by internal researchers.
+      - task: >-
+          Design, and developed microservices for providing a credit scoring
+          service to a client.
+        result: >-
+          The project reached the algorithm testing phase, processing
+          thousands of credit applications per day.
+    skills:
+      - Python
+      - PHP
+      - TensorFlow
+      - Scikit-Learn
+      - Laravel
+      - Flask
+      - AWS EC2
+      - Docker
+
+  - title: System Engineer
+    company: Denso Ten Solutions Philippines - Automotive Electronics
+    country: Philippines
+    start_date: 2015-12-01
+    end_date: 2017-01-01
+    achievements:
+      - task: >-
+          Architected, designed, and developed FMI integration to CRAMAS ECU
+          testing tool.
+        result: >-
+          CRAMAS Tool was able to integrate FMI compliant models from various
+          vendors in simulation.
+      - task: >-
+          Designed, and developed virtual ECU simulation in CRAMAS.
+        result: >-
+          CRAMAS Tool and Virtual ECU prototypes showed feasibility and the
+          project moved to next phase.
+      - task: >-
+          Maintained CRAMAS Auto Test Tool, a tool for creating test cases for
+          automotive hardware simulation.
+        result: >-
+          CRAMAS Auto Test Tool received 10-20 bug fixes and performance
+          improvements each quarter.
+    skills:
+      - C
+      - C++
+      - C#
+      - Matlab
+      - SVN
+
+  - title: Researcher
+    company: Department of Science and Technology - Project LiDAR
+    country: Philippines
+    start_date: 2015-01-01
+    end_date: 2015-08-01
+    achievements:
+      - task: >-
+          Developed a methodology for land cover classification using landsat.
+        result: >-
+          The methodology was adapted as team baseline for landsat processing.
+      - task: >-
+          Researched machine learning image classifiers for LiDAR and landsat.
+        result: >-
+          Resource mapping algorithm was developed and resource map for
+          provinces was given to government units.
+      - task: >-
+          Represented the team in Phil-LiDAR 2 Luzon Cluster Colloquium.
+        result: >-
+          Presented the topic: Development of End-to-End Image Processing
+          Pipeline for Resource Mapping.
+    skills:
+      - Python
+      - C#
+      - ENVI
+      - eCognition
+      - ArcGIS
 
 projects:
   - title: Rock Size Distribution
     description: >-
-      A commission project to demonstrate the calculation of the rock sizes
-      during the mining process. Sieving the rocks is considered a more
-      accurate approach to determine the rock size, however it is not scalable
-      for large mining operations. The idea is to present a possible
-      alternative using computer vision.
-    start_date: 2021-06-01
-    end_date: 2021-07-01
+      A project for a startup company to utilize computer vision in computing
+      the rock size distribution during the mining process. While sieving the
+      rocks is considered a more accurate approach to determine the rock size,
+      however it is not scalable for large mining operations. The project used
+      edge detection neural networks to segment and calculate the distribution
+      of rock particles.
+    start_date: 2021-07-01
+    end_date: 2021-09-01
     skills:
       - Python
-      - Tensorflow
+      - TensorFlow
+      - OpenCV
+      - Scikit-Image
+
+  - title: Mine Worker Detection
+    description: >-
+      A project for a startup company to see if identifying people inside the
+      mines are feasible using RBG cameras. An SSD network using a Mobilenet
+      as a base model was trained. The model was pretrained using the COCO
+      dataset and additional images of people in dark areas were used as the
+      training set to simulate mine lighting environments.
+    start_date: 2019-08-01
+    end_date: 2019-10-01
+    skills:
+      - Python
+      - TensorFlow
+
+  - title: Rice Health Classifier
+    description: >-
+      A project for a research team looking at drones to improve rice farming
+      processes. For this project, the feasibility of identifying healthy and
+      unhealthy rice fields using drone images was tested. A convolutional
+      neural network based on VGG16 was trained. The model was pretrained with
+      Imagenet and trained with rice drone images.
+    start_date: 2019-05-01
+    end_date: 2019-07-01
+    skills:
+      - Python
+      - TensorFlow
+
+  - title: Sandpaper Granularity
+    description: >-
+      A project for a sandpaper manufacturing company to test if computer
+      vision can be used to determine the smoothness of the sand paper. The
+      project used image segmentation and shape characteristics in order to
+      determine the rough sand. From the rough sand, the area covered by the
+      rough sand is calculated and correlated with the sand paper quality.
+    start_date: 2019-05-01
+    end_date: 2019-07-01
+    skills:
+      - Python
       - OpenCV
       - Scikit-Image
 
 education:
-  - degree: Masters Degree
+  - degree: Master's Degree
     program: Computer Engineering
-    institution: Mapua Institute of Technology
-    details: Master program in Mapua on computer engineering.
+    institution: Mapúa University (Mapúa Institute of Technology)
+    details: >-
+      Best Thesis Awardee: Soil Moisture Controller for Vertical Greenery
+      Systems Using Artificial Neural Networks
+    start_date: 2013-07-01
+    end_date: 2015-09-01
+
+  - degree: Bachelor's Degree
+    program: Computer Engineering
+    institution: Mapúa University (Mapúa Institute of Technology)
+    details: >-
+      Honors: Cum Laude
+
+      Specialization: Microsoft .NET Technology
+
+      Design Project: Portable On-device Leaf Recognition Device with GPS
+      Capability Using Artificial Neural Network
     start_date: 2010-07-01
     end_date: 2015-09-01

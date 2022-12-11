@@ -2,6 +2,7 @@ from typing import (
     List,
     Union,
     Literal,
+    Optional,
 )
 from datetime import date
 
@@ -22,7 +23,6 @@ class BasicInfo(BaseModel):
     email: str
     address: str
 
-
     summary: str
 
 
@@ -33,16 +33,17 @@ class Competence(BaseModel):
 
 class ProfessionalAchivement(BaseModel):
     task: str
-    results: List[str]
+    result: str = ""
 
 
 class ProfessionalExperience(BaseModel):
     title: str
     company: str
+    consulting_company: Optional[str] = None
     country: str
 
     start_date: date
-    end_date: Union[date, Literal['present']]
+    end_date: Union[date, Literal['present']] = 'present'
 
     achievements: List[ProfessionalAchivement]
 
@@ -54,7 +55,7 @@ class FreelanceProjects(BaseModel):
     description: str
 
     start_date: date
-    end_date: date
+    end_date: Union[date, Literal['present']] = 'present'
 
     skills: List[str]
 
@@ -66,7 +67,7 @@ class Education(BaseModel):
     details: str
 
     start_date: date
-    end_date: Union[date, Literal['present']]
+    end_date: Union[date, Literal['present']] = 'present'
 
 
 class CurriculumVitae(BaseModel):

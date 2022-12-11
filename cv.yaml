@@ -84,6 +84,79 @@ experiences:
       - Android
       - Jetpack Compose
 
+  - title: Faculty
+    company: Mapúa University - School of EECE
+    country: Philippines
+    start_date: 2019-02-01
+    end_date: 2022-02-01
+    achievements:
+      - task: |-
+          Developed lessons and syllabi, and handled the following courses:
+          - Neural Networks
+          - Digital Image Processing
+          - Natural Language Processing
+      - task: |-
+          Handled the following courses:
+          - Advance Computer Architecture and Organization
+          - Design of Digital Systems and Computers
+    skills:
+      - Python
+      - TensorFlow
+      - OpenCV
+      - NLTK
+
+  - title: Machine Learning Engineer
+    company: Phitopolis Inc. - Quantitative Research
+    country: Philippines
+    start_date: 2019-08-01
+    end_date: 2021-07-01
+    achievements:
+      - task: >-
+          Redesigned, and redeveloped the alpha performance tool used for
+          evaluation of trading signals.
+        result: >-
+          New alpha performance tool was 1.5 to 2 times faster, had a more
+          modular code base, was the dependency of internal tools, and was
+          used in the entire company.
+      - task: >-
+          Designed, and developed a tool to determine the contribution of
+          individual models to the ensemble.
+        result: >-
+          Executives relied on the tool results to evaluate the performance of
+          the current trading strategy.
+      - task: >-
+          Designed, and developed a tool to visualize the quality of
+          structured data.
+        result: >-
+          The quantitative research and data operations teams used the tool to
+          validate new and updated data streams.
+      - task: >-
+          Developed frameworks for creating different extract, transform, load
+          (ETL) projects.
+        result: >-
+          The quantitative research and data operations teams used the framework to move research projects into production operations.
+      - task: >-
+          Researched and developed trading strategies from different concepts
+          of liquidity.
+        result: >-
+          The trading strategy result was integrated as one of the part of the
+          company trading strategy.
+      - task: >-
+          Researched and explored other strategies on equities, futures, ETFs,
+          sectors, and risks.
+        result: >-
+          Quick research cycles, with initial results from 1-2 weeks of the research conceptualization.
+    skills:
+      - Python
+      - C++
+      - R
+      - TensorFlow
+      - PyGMO
+      - Scikit-Learn
+      - LGBM
+      - Sun Grid Engine
+      - Gitlab CI
+
   - title: Data Science Engineer
     company: Trend Micro Inc. - Anti False Positive
     country: Philippines

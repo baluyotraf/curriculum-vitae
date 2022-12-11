@@ -84,6 +84,58 @@ experiences:
       - Android
       - Jetpack Compose
 
+  - title: Data Science Engineer
+    company: Trend Micro Inc. - Anti False Positive
+    country: Philippines
+    start_date: 2018-11-01
+    end_date: 2019-08-01
+    achievements:
+      - task: >-
+          Architected, designed, and developed a framework for deploying
+          malware detection services.
+        result: >-
+          Machine learning models and analytical algorithms developed by the
+          team were deployed to production using the framework.
+      - task: >-
+          Designed and developed a machine learning model for image file
+          malware detection.
+        result: >-
+          The model was deployed in production as part of the larger malware detection pipeline.
+      - task: >-
+          Researched machine learning malware classifiers based on system logs and file metadata.
+        result: >-
+          The model was not stable as desired and the conclusion was that
+          additional metadata were needed to improve stability.
+
+    skills:
+      - Python
+      - TensorFlow
+      - AWS EC2
+      - AWS Athena
+      - AWS SQS
+      - AWS S3
+
+  - title: Faculty
+    company: Adamson University - School of Engineering
+    country: Philippines
+    start_date: 2018-08-01
+    end_date: 2018-12-01
+    achievements:
+      - task: |-
+          Developed lessons and syllabi, and handled the following courses:
+          - Web Development
+          - Database Design
+    skills:
+      - Python
+      - HTML
+      - CSS
+      - JavaScript
+      - SQL
+      - Flask
+      - Vue.js
+      - Docker
+      - MySQL
+
   - title: AI Engineer
     company: Innovantage Inc. - Research
     country: Philippines

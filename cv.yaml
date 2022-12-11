@@ -84,6 +84,58 @@ experiences:
       - Android
       - Jetpack Compose
 
+  - title: System Engineer
+    company: Denso Ten Solutions Philippines - Automotive Electronics
+    country: Philippines
+    start_date: 2015-12-01
+    end_date: 2017-01-01
+    achievements:
+      - task: >-
+          Architected, designed, and developed FMI integration to CRAMAS ECU testing tool.
+        result: >-
+          CRAMAS Tool was able to integrate FMI compliant models from various vendors in simulation.
+      - task: >-
+          Designed, and developed virtual ECU simulation in CRAMAS.
+        result: >-
+          CRAMAS Tool and Virtual ECU prototypes showed feasibility and the project moved to next phase.
+      - task: >-
+          Maintained CRAMAS Auto Test Tool, a tool for creating test cases for automotive hardware simulation.
+        result: >-
+          CRAMAS Auto Test Tool received 10-20 bug fixes and performance
+          improvements each quarter.
+    skills:
+      - C
+      - C++
+      - C#
+      - Matlab
+      - SVN
+
+  - title: Researcher
+    company: Department of Science and Technology - Project LiDAR
+    country: Philippines
+    start_date: 2015-01-01
+    end_date: 2015-08-01
+    achievements:
+      - task: >-
+          Developed a methodology for land cover classification using landsat.
+        result: >-
+          The methodology was adapted as team baseline for landsat processing.
+      - task: >-
+          Researched machine learning image classifiers for LiDAR and landsat.
+        result: >-
+          Resource mapping algorithm was developed and resource map for
+          provinces was given to government units.
+      - task: >-
+          Represented the team in Phil-LiDAR 2 Luzon Cluster Colloquium.
+        result: >-
+          Presented the topic: Development of End-to-End Image Processing Pipeline for Resource Mapping.
+    skills:
+      - Python
+      - C#
+      - ENVI
+      - eCognition
+      - ArcGIS
+
 projects:
   - title: Rock Size Distribution
     description: >-

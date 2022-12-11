@@ -11,10 +11,11 @@ headline:
   address: Gothenburg, Sweden
   summary: >-
     A machine learning engineer who is proficient in Deep Learning,
-    Machine Learning, and Software Engineering. A open-source contributor
-    with minor contributions to several data libraries such as Scikit-Learn,
-    Pandas-Profiling, PyGMO, etc. A highly curious individual that engages in
-    research and academic works.
+    Machine Learning, and Software Engineering. Exploring research ideas and
+    developing software products has been his role for eight years, bridging
+    the gap between research and development or both. Passionate about sharing
+    his knowledge leading him to work with university courses and open source
+    development.
 
 competences:
   - area: Programming Languages
@@ -22,9 +23,12 @@ competences:
       - Python
       - Kotlin
       - Bash
-      - C
-      - C++
       - SQL
+  - area: Machine Learning Areas
+    skills:
+      - Vision
+      - High Frequency
+      - NLP
   - area: Data Science libraries
     skills:
       - Tensorflow
@@ -38,23 +42,20 @@ competences:
       - Azure ML
   - area: Data Stores
     skills:
-      - Azure Blob Storage
+      - Relational Database
       - HDFS
-      - MySQL
-      - SQL Server
-      - PostgreSQL
       - Redis
-  - area: Deployment and Platforms
+  - area: Deployment and Operations
     skills:
       - Git
       - Linux
       - Docker
-      - GilabCI
-      - Ansible
+      - Github Action
 
 experiences:
   - title: Embedded Machine Learning Engineer
     company: Autoliv AB
+    consulting_company: LuunaX AB
     country: Sweden
     start_date: 2022-06-01
     end_date: present
@@ -62,18 +63,15 @@ experiences:
       - task: >-
           Researched and developed a classifier for escooter rider interaction
           with the handle bar.
-        results:
-          - >-
+        result: >-
             Research team used the model to perform behavior analysis on the
             rider.
       - task: >-
           Designed and developed an Android App and Android SDK for collecting
           research data.
-        results: []
       - task: >-
           Researched analytical and machine learning algorithms for crash
           detection.
-        results: []
     skills:
       - Python
       - Kotlin
@@ -89,23 +87,79 @@ experiences:
 projects:
   - title: Rock Size Distribution
     description: >-
-      A commission project to demonstrate the calculation of the rock sizes
-      during the mining process. Sieving the rocks is considered a more
-      accurate approach to determine the rock size, however it is not scalable
-      for large mining operations. The idea is to present a possible
-      alternative using computer vision.
-    start_date: 2021-06-01
-    end_date: 2021-07-01
+      A project for a startup company to utilize computer vision in computing
+      the rock size distribution during the mining process. While sieving the
+      rocks is considered a more accurate approach to determine the rock size,
+      however it is not scalable for large mining operations. The project used
+      edge detection neural networks to segment and calculate the distribution
+      of rock particles.
+    start_date: 2021-07-01
+    end_date: 2021-09-01
     skills:
       - Python
       - Tensorflow
       - OpenCV
       - Scikit-Image
 
+  - title: Mine Worker Detection
+    description: >-
+      A project for a startup company to see if identifying people inside the
+      mines are feasible using RBG cameras. An SSD network using a Mobilenet
+      as a base model was trained. The model was pretrained using the COCO
+      dataset and additional images of people in dark areas were used as the
+      training set to simulate mine lighting environments.
+    start_date: 2019-08-01
+    end_date: 2019-10-01
+    skills:
+      - Python
+      - Tensorflow
+
+  - title: Rice Health Classifier
+    description: >-
+      A project for a research team looking at drones to improve rice farming
+      processes. For this project, the feasibility of identifying healthy and
+      unhealthy rice fields using drone images was tested. A convolutional
+      neural network based on VGG16 was trained. The model was pretrained with
+      Imagenet and trained with rice drone images.
+    start_date: 2019-05-01
+    end_date: 2019-07-01
+    skills:
+      - Python
+      - Tensorflow
+
+  - title: Sandpaper Granularity
+    description: >-
+      A project for a sandpaper manufacturing company to test if computer
+      vision can be used to determine the smoothness of the sand paper. The
+      project used image segmentation and shape characteristics in order to
+      determine the rough sand. From the rough sand, the area covered by the
+      rough sand is calculated and correlated with the sand paper quality.
+    start_date: 2019-05-01
+    end_date: 2019-07-01
+    skills:
+      - Python
+      - OpenCV
+      - Scikit-Image
+
 education:
-  - degree: Masters Degree
+  - degree: Master's Degree
     program: Computer Engineering
-    institution: Mapua Institute of Technology
-    details: Master program in Mapua on computer engineering.
+    institution: Mapúa University (Mapúa Institute of Technology)
+    details: >-
+      Best Thesis Awardee: Soil Moisture Controller for Vertical Greenery
+      Systems Using Artificial Neural Networks
+    start_date: 2013-07-01
+    end_date: 2015-09-01
+
+  - degree: Bachelor's Degree
+    program: Computer Engineering
+    institution: Mapúa University (Mapúa Institute of Technology)
+    details: >-
+      Honors: Cum Laude
+
+      Specialization: Microsoft .NET Technology
+
+      Design Project: On-device Portable Leaf Recognition Device with GPS
+      Capability Using Artificial Neural Network
     start_date: 2010-07-01
     end_date: 2015-09-01

@@ -164,6 +164,8 @@ Timelines
     font-family: var(--font-secondary);
     font-size: 3.5mm;
     font-weight: 900;
+    white-space: nowrap;
+    width: 17mm;
 }
 
 .cv-timeline-time > * {

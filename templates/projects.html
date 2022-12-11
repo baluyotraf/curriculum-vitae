@@ -1,3 +1,5 @@
+<%namespace name="lib" file="cv.html"/>
+
 <section class="cv-section">
 
 <h3 class="cv-section-header">
@@ -10,8 +12,8 @@
 <article class="cv-project cv-timeline cv-section-content">
 
 <div class="cv-timeline-time">
-    <text>${proj.end_date}</text>
-    <text>${proj.start_date}</text>
+    <text>${lib.format_date(proj.end_date)}</text>
+    <text>${lib.format_date(proj.start_date)}</text>
 </div>
 
 <div class="mr-card cv-timeline-event">

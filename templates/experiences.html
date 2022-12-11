@@ -18,21 +18,27 @@
 
     <div class="mr-card-header">
         <h4>${exp.title}</h4>
-        <h5>${exp.company}, ${exp.country}</h5>
+        <h5 class="cv-experience-subtitle">
+            <i class="fa-solid fa-building"></i> ${exp.company}
+        </h5>
+        % if exp.consulting_company is not None:
+        <h5 class="cv-experience-subtitle">
+            <i class="fa-solid fa-file-contract"></i> ${exp.consulting_company}
+        </h5>
+        % endif
+        <h5 class="cv-experience-subtitle">
+            <i class="fa-solid fa-location-dot"></i> ${exp.country}
+        </h5>
     </div>
 
     <div class="mr-card-content">
 
         <ul class="cv-experience-achievements">
         % for ach in exp.achievements:
-            <li>
-                <p class="cv-experince-achievement-task">${ach.task}</p>
-                <ul class="cv-experience-achievement-results">
-                % for res in ach.results:
-                    <li><p>${res}</p></li>
-                % endfor
-                </ul>
-            </li>
+            <li><p>
+                <span class="cv-experience-achievement-task">${ach.task}</span>
+                <span class="cv-experience-achievement-result">${ach.result}</span>
+            </p></li>
         % endfor
         </ul>
 

@@ -32,6 +32,12 @@
             <i class="fa-solid fa-location-dot"></i>
             <text>${cv.headline.address}</text>
         </span>
+        % if cv.metadata and cv.metadata.website:
+        <a href="${cv.metadata.website}">
+            <i class="fa-solid fa-link"></i>
+            <text>${cv.metadata.website}</text>
+        </a>
+        % endif
 
     </div>
 </section>

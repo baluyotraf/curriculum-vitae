@@ -130,7 +130,7 @@ Pages and Sections
 
 .cv-page {
     max-width: var(--paper-width);
-    margin: 0 auto;
+    margin: calc(var(--spacing-size-large) * var(--web-mode)) auto;
     background-color: var(--paper-background);
     box-shadow: var(--spacing-size-normal)
                 var(--spacing-size-normal)
@@ -199,7 +199,6 @@ Banner
 
 .cv-banner {
     background-color: var(--color-primary-dark);
-    margin-bottom: var(--spacing-size-large);
     box-shadow: var(--spacing-size-normal)
                 var(--spacing-size-normal);
     % if web_mode == 0:

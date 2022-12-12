@@ -12,8 +12,11 @@ from pydantic import BaseModel as PydanticModel
 class BaseModel(PydanticModel):
     pass
 
+
 class Metadata(BaseModel):
     github_repo: Optional[str] = None
+    website: Optional[str] = None
+
 
 class BasicInfo(BaseModel):
     name: str

@@ -15,10 +15,15 @@ CSS Variables
     --color-secondary-light: #ffffee;
     --color-secondary-text: #000000;
 
-    --paper-width: 210mm;
+    --web-mode: ${web_mode};
 
-    --spacing-size-large: 10mm;
-    --spacing-size-normal: 5mm;
+    --paper-width: 210mm;
+    --paper-background: #ffffff;
+    --paper-shadow: rgba(0, 0, 0, var(--web-mode));
+    --body-backdrop: rgba(77, 77, 77, var(--web-mode));
+
+    --spacing-size-large: 8mm;
+    --spacing-size-normal: 4mm;
     --spacing-size-small: 2mm;
 
     --border-size: 0.2mm;
@@ -31,48 +36,52 @@ CSS Variables
 
 h1 {
     font-family: var(--font-primary);
-    font-size: 10mm;
+    font-size: 8.5mm;
     font-weight: 300;
     margin: 1mm 0 2mm 0;
 }
 
 h2 {
     font-family: var(--font-primary);
-    font-size: 6mm;
+    font-size: 5mm;
     font-weight: 500;
     margin: 1mm 0 2mm 0;
 }
 
 h3 {
     font-family: var(--font-primary);
-    font-size: 6mm;
+    font-size: 5mm;
     font-weight: 700;
     margin: 1mm 0 2mm 0;
 }
 
 h4 {
     font-family: var(--font-primary);
-    font-size: 4.5mm;
+    font-size: 3.8mm;
     font-weight: 500;
     margin: 1mm 0 1.5mm 0;
 }
 
 h5 {
     font-family: var(--font-primary);
-    font-size: 4mm;
+    font-size: 3.4mm;
     font-weight: 500;
     margin: 1mm 0 1mm 0;
 }
 
 p {
     font-family: var(--font-secondary);
-    font-size: 4mm;
+    font-size: 3.4mm;
     margin: 0;
 }
 
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
+}
+
+body {
+    background: var(--body-backdrop);
 }
 
 /*
@@ -105,7 +114,7 @@ Material
     background: var(--color-secondary);
     color: var(--color-secondary-text);
     font-family: var(--font-secondary);
-    font-size: 4.5mm;
+    font-size: 3.8mm;
 }
 
 .mr-chip:nth-child(even) {
@@ -121,21 +130,26 @@ Pages and Sections
 .cv-page {
     max-width: var(--paper-width);
     margin: auto;
-    border: 1px solid black;
+    background-color: var(--paper-background);
+    box-shadow: var(--spacing-size-normal)
+                var(--spacing-size-normal)
+                var(--paper-shadow);
 }
 
 .cv-page-content {
     padding: var(--spacing-size-large);
-    padding-top: var(--spacing-size-normal);
+    padding-top: 0;
 }
 
 .cv-section-header {
     text-align: center;
     padding: var(--spacing-size-small);
+    page-break-after: avoid;
 }
 
 .cv-section-content {
     margin: var(--spacing-size-small);
+    page-break-inside: auto;
 }
 
 /*

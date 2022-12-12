@@ -16,7 +16,8 @@ jobs:
           python-version: 3.8
       - run: |
           pip install -r requirements.txt
-          python cv.py html
+          python cv.py html cv.yaml site
+          python cv.py print cv.yaml site/print
           cp CNAME site/CNAME
           cd site
           git init

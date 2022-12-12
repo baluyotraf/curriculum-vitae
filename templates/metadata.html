@@ -1,9 +1,19 @@
 % if cv.metadata:
 <ul class="cv-metadata">
     % if cv.metadata.github_repo:
-    <a href="https://github.com/${cv.metadata.github_repo}">
-        <li><i class="fa-brands fa-github"></i> ${cv.metadata.github_repo}</li>
-    </a>
+    <li>
+        <a href="https://github.com/${cv.metadata.github_repo}">
+        <i class="fa-brands fa-github"></i> ${cv.metadata.github_repo}
+        </a>
+    </li>
+    % endif
+
+    % if cv.metadata.printable:
+    <li>
+        <a href="${cv.metadata.printable}">
+        <i class="fa-solid fa-print"></i> Printer Friendly Version
+        </a>
+    </li>
     % endif
 </ul>
 % endif

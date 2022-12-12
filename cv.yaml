@@ -1,6 +1,7 @@
 metadata:
   github_repo: baluyotraf/curriculum-vitae
   website: https://cv.softwareplus.ml
+  printable: ./print
 
 headline:
   name: Raffaello Baluyot

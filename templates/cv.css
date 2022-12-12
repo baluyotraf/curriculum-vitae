@@ -215,6 +215,10 @@ Banner
     list-style: None;
 }
 
+.cv-metadata > li {
+    margin: var(--spacing-size-small);
+}
+
 /*
 ##############################################################################
 Headline

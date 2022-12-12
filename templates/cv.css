@@ -17,8 +17,8 @@ CSS Variables
 
     --paper-width: 210mm;
 
-    --spacing-size-large: 10mm;
-    --spacing-size-normal: 5mm;
+    --spacing-size-large: 8mm;
+    --spacing-size-normal: 4mm;
     --spacing-size-small: 2mm;
 
     --border-size: 0.2mm;
@@ -31,42 +31,42 @@ CSS Variables
 
 h1 {
     font-family: var(--font-primary);
-    font-size: 10mm;
+    font-size: 8.5mm;
     font-weight: 300;
     margin: 1mm 0 2mm 0;
 }
 
 h2 {
     font-family: var(--font-primary);
-    font-size: 6mm;
+    font-size: 5mm;
     font-weight: 500;
     margin: 1mm 0 2mm 0;
 }
 
 h3 {
     font-family: var(--font-primary);
-    font-size: 6mm;
+    font-size: 5mm;
     font-weight: 700;
     margin: 1mm 0 2mm 0;
 }
 
 h4 {
     font-family: var(--font-primary);
-    font-size: 4.5mm;
+    font-size: 3.8mm;
     font-weight: 500;
     margin: 1mm 0 1.5mm 0;
 }
 
 h5 {
     font-family: var(--font-primary);
-    font-size: 4mm;
+    font-size: 3.4mm;
     font-weight: 500;
     margin: 1mm 0 1mm 0;
 }
 
 p {
     font-family: var(--font-secondary);
-    font-size: 4mm;
+    font-size: 3.4mm;
     margin: 0;
 }
 
@@ -105,7 +105,7 @@ Material
     background: var(--color-secondary);
     color: var(--color-secondary-text);
     font-family: var(--font-secondary);
-    font-size: 4.5mm;
+    font-size: 3.8mm;
 }
 
 .mr-chip:nth-child(even) {
@@ -132,10 +132,12 @@ Pages and Sections
 .cv-section-header {
     text-align: center;
     padding: var(--spacing-size-small);
+    page-break-after: avoid;
 }
 
 .cv-section-content {
     margin: var(--spacing-size-small);
+    page-break-inside: auto;
 }
 
 /*

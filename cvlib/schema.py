@@ -16,7 +16,7 @@ class BaseModel(PydanticModel):
 class Metadata(BaseModel):
     github_repo: Optional[str] = None
     website: Optional[str] = None
-
+    printable: Optional[str] = None
 
 class BasicInfo(BaseModel):
     name: str

@@ -82,6 +82,7 @@ a, a:hover, a:focus, a:active {
 
 body {
     background: var(--body-backdrop);
+    margin: 0;
 }
 
 /*
@@ -129,7 +130,7 @@ Pages and Sections
 
 .cv-page {
     max-width: var(--paper-width);
-    margin: auto;
+    margin: 0 auto;
     background-color: var(--paper-background);
     box-shadow: var(--spacing-size-normal)
                 var(--spacing-size-normal)
@@ -188,6 +189,31 @@ Timelines
 
 .cv-timeline-event {
     grid-column: 2;
+}
+
+/*
+##############################################################################
+Banner
+##############################################################################
+*/
+
+.cv-banner {
+    background-color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-size-large);
+    box-shadow: var(--spacing-size-normal)
+                var(--spacing-size-normal);
+    % if web_mode == 0:
+    display: none;
+    % endif
+}
+
+.cv-metadata {
+    color: var(--color-primary-text);
+    font-family: var(--font-primary);
+    padding: var(--spacing-size-normal);
+    margin: 0 auto;
+    width: fit-content;
+    list-style: None;
 }
 
 /*

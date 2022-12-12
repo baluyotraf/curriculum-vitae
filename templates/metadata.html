@@ -1,0 +1,9 @@
+% if cv.metadata:
+<ul class="cv-metadata">
+    % if cv.metadata.github_repo:
+    <a href="https://github.com/${cv.metadata.github_repo}">
+        <li><i class="fa-brands fa-github"></i> ${cv.metadata.github_repo}</li>
+    </a>
+    % endif
+</ul>
+% endif

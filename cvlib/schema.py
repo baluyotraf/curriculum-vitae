@@ -12,6 +12,12 @@ from pydantic import BaseModel as PydanticModel
 class BaseModel(PydanticModel):
     pass
 
+
+class Metadata(BaseModel):
+    github_repo: Optional[str] = None
+    website: Optional[str] = None
+
+
 class BasicInfo(BaseModel):
     name: str
     tagline: str
@@ -31,7 +37,7 @@ class Competence(BaseModel):
     skills: List[str]
 
 
-class ProfessionalAchivement(BaseModel):
+class ProfessionalAchievement(BaseModel):
     task: str
     result: str = ""
 
@@ -45,7 +51,7 @@ class ProfessionalExperience(BaseModel):
     start_date: date
     end_date: Union[date, Literal['present']] = 'present'
 
-    achievements: List[ProfessionalAchivement]
+    achievements: List[ProfessionalAchievement]
 
     skills: List[str]
 
@@ -71,6 +77,7 @@ class Education(BaseModel):
 
 
 class CurriculumVitae(BaseModel):
+    metadata: Optional[Metadata] = None
     headline: BasicInfo
     competences: List[Competence]
     experiences: List[ProfessionalExperience]

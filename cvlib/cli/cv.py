@@ -1,13 +1,8 @@
 import os
-import shutil
-import glob
 
 import click
 
-from cvlib.template import (
-    render_template,
-    TEMPLATE_PATH,
-)
+from cvlib import template
 
 
 @click.group()
@@ -20,10 +15,5 @@ def cv():
 def generate(input, output):
     os.makedirs(output, exist_ok=True)
 
-    render_template(input, os.path.join(output, 'index.html'))
-
-    for css in glob.glob(os.path.join(TEMPLATE_PATH, '*.css')):
-        try:
-            shutil.copy2(css, output)
-        except shutil.SameFileError:
-            pass
+    template.render_html(input, os.path.join(output, 'index.html'))
+    template.render_css(os.path.join(output, 'cv.css'))

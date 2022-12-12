@@ -12,7 +12,8 @@ from cvlib.schema import CurriculumVitae
 
 BASE_PATH = os.path.dirname(os.path.abspath(cvlib.__file__))
 TEMPLATE_PATH = os.path.join(BASE_PATH, '../templates')
-TEMPLATE_NAME = 'cv.html'
+HTML_TEMPLATE_NAME = 'cv.html'
+CSS_TEMPLATE_NAME = 'cv.css'
 
 
 def escape(text):
@@ -29,12 +30,19 @@ TEMPLATE_LOOKUP = TemplateLookup(
 )
 
 
-def render_template(config, output):
+def render_html(config, output):
 
     with open(config) as cf:
         cv = CurriculumVitae(**yaml.safe_load(cf))
 
     with open(output, 'w') as of:
         context = Context(of, cv=cv)
-        template = TEMPLATE_LOOKUP.get_template(TEMPLATE_NAME)
+        template = TEMPLATE_LOOKUP.get_template(HTML_TEMPLATE_NAME)
+        template.render_context(context)
+
+
+def render_css(output, web=True):
+    with open(output, 'w') as of:
+        context = Context(of, web_mode=1 if web else 0)
+        template = TEMPLATE_LOOKUP.get_template(CSS_TEMPLATE_NAME)
         template.render_context(context)

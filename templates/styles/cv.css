@@ -5,15 +5,15 @@ CSS Variables
 */
 
 :root {
-    --color-primary: #4e342e;
-    --color-primary-dark: #260e04;
-    --color-primary-light: #7b5e57;
-    --color-primary-text: #ffffff;
+    --color-primary: ${cv.theme.primary_color};
+    --color-primary-dark: ${cv.theme.primary_color_dark};
+    --color-primary-light: ${cv.theme.primary_color_light};
+    --color-primary-text: ${cv.theme.primary_color_text};
 
-    --color-secondary: #ffccbc;
-    --color-secondary-dark: #e9ccc3;
-    --color-secondary-light: #ffffee;
-    --color-secondary-text: #000000;
+    --color-secondary: ${cv.theme.secondary_color};
+    --color-secondary-dark: ${cv.theme.secondary_color_dark};
+    --color-secondary-light: ${cv.theme.secondary_color_light};
+    --color-secondary-text: ${cv.theme.secondary_color_text};
 
     --web-mode: ${web_mode};
 
@@ -30,8 +30,8 @@ CSS Variables
     --border-color: rgba(0, 0, 0, 0.2);
     --border-radius: 0mm;
 
-    --font-primary: "Noto Sans JP";
-    --font-secondary: "Maven Pro";
+    --font-primary: ${cv.theme.primary_font};
+    --font-secondary: ${cv.theme.secondary_font};
 }
 
 h1 {

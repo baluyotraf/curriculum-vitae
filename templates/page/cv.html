@@ -20,7 +20,7 @@
     <meta property="og:title" content="${cv.headline.name}" />
     <meta property="og:description" content="${cv.headline.tagline}" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="./${card_path}" />
+    <meta property="og:image" content="${cv.metadata.website}/${card_path}" />
     <meta property="og:url" content="${cv.metadata.website}" />
     <meta property="og:image:type"  content="image/png" />
     <meta property="og:image:width"  content="1200" />
@@ -29,7 +29,7 @@
     <meta name="twitter:card"  content="summary_large_image" />
     <meta name="twitter:title"  content="${cv.headline.name}" />
     <meta name="twitter:description"  content="${cv.headline.tagline}" />
-    <meta name="twitter:image" content="./${card_path}" />
+    <meta name="twitter:image" content="${cv.metadata.website}/${card_path}" />
     % endif
 </head>
 

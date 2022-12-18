@@ -13,10 +13,25 @@ class BaseModel(PydanticModel):
     pass
 
 
+class Theme(PydanticModel):
+    primary_color: str
+    primary_color_dark: str
+    primary_color_light: str
+    primary_color_text: str
+    primary_font: str
+
+    secondary_color: str
+    secondary_color_dark: str
+    secondary_color_light: str
+    secondary_color_text: str
+    secondary_font: str
+
+
 class Metadata(BaseModel):
-    github_repo: Optional[str] = None
+    github: Optional[str] = None
     website: Optional[str] = None
     printable: Optional[str] = None
+
 
 class BasicInfo(BaseModel):
     name: str
@@ -39,7 +54,7 @@ class Competence(BaseModel):
 
 class ProfessionalAchievement(BaseModel):
     task: str
-    result: str = ""
+    result: str = ''
 
 
 class ProfessionalExperience(BaseModel):
@@ -76,7 +91,23 @@ class Education(BaseModel):
     end_date: Union[date, Literal['present']] = 'present'
 
 
+DEFAULT_THEME = Theme(
+    primary_color = '#4e342e',
+    primary_color_dark = '#260e04',
+    primary_color_light = '#7b5e57',
+    primary_color_text = '#ffffff',
+    primary_font = 'Noto Sans JP',
+
+    secondary_color = '#ffccbc',
+    secondary_color_dark = '#e9ccc3',
+    secondary_color_light = '#ffffee',
+    secondary_color_text = '#000000',
+    secondary_font = 'Maven Pro'
+)
+
+
 class CurriculumVitae(BaseModel):
+    theme: Theme = DEFAULT_THEME
     metadata: Optional[Metadata] = None
     headline: BasicInfo
     competences: List[Competence]

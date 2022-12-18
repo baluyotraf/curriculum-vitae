@@ -11,9 +11,18 @@
 
 <head>
     <script src="https://kit.fontawesome.com/b670e08959.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans JP">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=${cv.theme.primary_font}|${cv.theme.secondary_font}">
     <link rel="stylesheet" href="cv.css">
+
+    <title>${cv.headline.name}</title>
+
+    % if cv.metadata and cv.metadata.website:
+    <meta property="og:title" content="${cv.headline.name}"/>
+    <meta property="og:description" content="${cv.headline.tagline}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content=${card_path}/>
+    <meta property="og:url" content="${cv.metadata.website}"/>
+    % endif
 </head>
 
 <body>

@@ -1,6 +1,20 @@
+from typing import Callable, TypeVar
 
-def bound_optimization(x0, x1, f, limit,
-                       tolerance=1, mid_transform=lambda x: x):
+from cvlib.typing import Number
+
+
+T = TypeVar('T', int, Number)
+
+
+def bound_optimization(
+    x0: T,
+    x1: T,
+    f: Callable[[T], Number],
+    limit: Number,
+    tolerance: Number = 1,
+    mid_transform: Callable[[Number], T] = lambda x: x
+):
+
     bounds = [x0, x1]
     values = [f(b) for b in bounds]
 

@@ -1,3 +1,5 @@
+from PIL import Image
+
 from cvlib.schema import CurriculumVitae
 from cvlib.card.fonts import GoogleFontLoader
 from cvlib.card.text import Text, MultiText
@@ -10,7 +12,7 @@ TAGLINE_SIZE = CARD_SIZE[0] // 20
 TEXT_SPACING = 20
 
 
-def create_card_from_cv(cv: CurriculumVitae):
+def create_card_from_cv(cv: CurriculumVitae) -> Image.Image:
     texts = [
         (cv.theme.primary_font, cv.headline.name, NAME_SIZE),
         (cv.theme.secondary_font, cv.headline.tagline, TAGLINE_SIZE),

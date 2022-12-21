@@ -1,0 +1,14 @@
+{
+    "include": [
+      "cvlib"
+    ],
+
+    "exclude": [
+      "**/__pycache__"
+    ],
+
+    "strict": ["*"],
+
+    "pythonVersion": "3.8",
+    "pythonPlatform": "Linux",
+  }

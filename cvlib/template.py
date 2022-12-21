@@ -6,7 +6,7 @@ from typing import (
 import yaml
 import markupsafe
 from mako.runtime import Context # type: ignore
-from mako.lookup import TemplateLookup, # type: ignore
+from mako.lookup import TemplateLookup # type: ignore
 
 import cvlib
 from cvlib.schema import CurriculumVitae

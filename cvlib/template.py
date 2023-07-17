@@ -1,7 +1,5 @@
 import os
-from typing import (
-    Any,
-)
+from typing import Any
 
 import yaml
 import markupsafe

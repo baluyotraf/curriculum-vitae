@@ -142,15 +142,17 @@ Pages and Sections
     padding-top: 0;
 }
 
+.cv-section {
+    break-inside: avoid;
+}
+
 .cv-section-header {
     text-align: center;
     padding: var(--spacing-size-small);
-    page-break-after: avoid;
 }
 
 .cv-section-content {
     margin: var(--spacing-size-small);
-    page-break-inside: auto;
 }
 
 /*

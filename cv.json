@@ -1,0 +1,430 @@
+{
+  "$defs": {
+    "BasicInfo": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "tagline": {
+          "title": "Tagline",
+          "type": "string"
+        },
+        "linkedin": {
+          "title": "Linkedin",
+          "type": "string"
+        },
+        "github": {
+          "title": "Github",
+          "type": "string"
+        },
+        "website": {
+          "title": "Website",
+          "type": "string"
+        },
+        "phone": {
+          "title": "Phone",
+          "type": "string"
+        },
+        "email": {
+          "title": "Email",
+          "type": "string"
+        },
+        "address": {
+          "title": "Address",
+          "type": "string"
+        },
+        "summary": {
+          "title": "Summary",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "tagline",
+        "linkedin",
+        "github",
+        "website",
+        "phone",
+        "email",
+        "address",
+        "summary"
+      ],
+      "title": "BasicInfo",
+      "type": "object"
+    },
+    "Competence": {
+      "properties": {
+        "area": {
+          "title": "Area",
+          "type": "string"
+        },
+        "skills": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Skills",
+          "type": "array"
+        }
+      },
+      "required": [
+        "area",
+        "skills"
+      ],
+      "title": "Competence",
+      "type": "object"
+    },
+    "Education": {
+      "properties": {
+        "degree": {
+          "title": "Degree",
+          "type": "string"
+        },
+        "program": {
+          "title": "Program",
+          "type": "string"
+        },
+        "institution": {
+          "title": "Institution",
+          "type": "string"
+        },
+        "details": {
+          "title": "Details",
+          "type": "string"
+        },
+        "start_date": {
+          "format": "date",
+          "title": "Start Date",
+          "type": "string"
+        },
+        "end_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "const": "present"
+            }
+          ],
+          "default": "present",
+          "title": "End Date"
+        }
+      },
+      "required": [
+        "degree",
+        "program",
+        "institution",
+        "details",
+        "start_date"
+      ],
+      "title": "Education",
+      "type": "object"
+    },
+    "FreelanceProjects": {
+      "properties": {
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "start_date": {
+          "format": "date",
+          "title": "Start Date",
+          "type": "string"
+        },
+        "end_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "const": "present"
+            }
+          ],
+          "default": "present",
+          "title": "End Date"
+        },
+        "skills": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Skills",
+          "type": "array"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "start_date",
+        "skills"
+      ],
+      "title": "FreelanceProjects",
+      "type": "object"
+    },
+    "Metadata": {
+      "properties": {
+        "github": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Github"
+        },
+        "website": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Website"
+        },
+        "printable": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Printable"
+        }
+      },
+      "title": "Metadata",
+      "type": "object"
+    },
+    "ProfessionalAchievement": {
+      "properties": {
+        "task": {
+          "title": "Task",
+          "type": "string"
+        },
+        "result": {
+          "default": "",
+          "title": "Result",
+          "type": "string"
+        }
+      },
+      "required": [
+        "task"
+      ],
+      "title": "ProfessionalAchievement",
+      "type": "object"
+    },
+    "ProfessionalExperience": {
+      "properties": {
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "company": {
+          "title": "Company",
+          "type": "string"
+        },
+        "consulting_company": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Consulting Company"
+        },
+        "country": {
+          "title": "Country",
+          "type": "string"
+        },
+        "start_date": {
+          "format": "date",
+          "title": "Start Date",
+          "type": "string"
+        },
+        "end_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "const": "present"
+            }
+          ],
+          "default": "present",
+          "title": "End Date"
+        },
+        "achievements": {
+          "items": {
+            "$ref": "#/$defs/ProfessionalAchievement"
+          },
+          "title": "Achievements",
+          "type": "array"
+        },
+        "skills": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Skills",
+          "type": "array"
+        }
+      },
+      "required": [
+        "title",
+        "company",
+        "country",
+        "start_date",
+        "achievements",
+        "skills"
+      ],
+      "title": "ProfessionalExperience",
+      "type": "object"
+    },
+    "Theme": {
+      "properties": {
+        "primary_color": {
+          "title": "Primary Color",
+          "type": "string"
+        },
+        "primary_color_dark": {
+          "title": "Primary Color Dark",
+          "type": "string"
+        },
+        "primary_color_light": {
+          "title": "Primary Color Light",
+          "type": "string"
+        },
+        "primary_color_text": {
+          "title": "Primary Color Text",
+          "type": "string"
+        },
+        "primary_font": {
+          "title": "Primary Font",
+          "type": "string"
+        },
+        "secondary_color": {
+          "title": "Secondary Color",
+          "type": "string"
+        },
+        "secondary_color_dark": {
+          "title": "Secondary Color Dark",
+          "type": "string"
+        },
+        "secondary_color_light": {
+          "title": "Secondary Color Light",
+          "type": "string"
+        },
+        "secondary_color_text": {
+          "title": "Secondary Color Text",
+          "type": "string"
+        },
+        "secondary_font": {
+          "title": "Secondary Font",
+          "type": "string"
+        }
+      },
+      "required": [
+        "primary_color",
+        "primary_color_dark",
+        "primary_color_light",
+        "primary_color_text",
+        "primary_font",
+        "secondary_color",
+        "secondary_color_dark",
+        "secondary_color_light",
+        "secondary_color_text",
+        "secondary_font"
+      ],
+      "title": "Theme",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "theme": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/Theme"
+        }
+      ],
+      "default": {
+        "primary_color": "#4e342e",
+        "primary_color_dark": "#260e04",
+        "primary_color_light": "#7b5e57",
+        "primary_color_text": "#ffffff",
+        "primary_font": "Noto Sans JP",
+        "secondary_color": "#ffccbc",
+        "secondary_color_dark": "#e9ccc3",
+        "secondary_color_light": "#ffffee",
+        "secondary_color_text": "#000000",
+        "secondary_font": "Maven Pro"
+      }
+    },
+    "metadata": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Metadata"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "headline": {
+      "$ref": "#/$defs/BasicInfo"
+    },
+    "competences": {
+      "items": {
+        "$ref": "#/$defs/Competence"
+      },
+      "title": "Competences",
+      "type": "array"
+    },
+    "experiences": {
+      "items": {
+        "$ref": "#/$defs/ProfessionalExperience"
+      },
+      "title": "Experiences",
+      "type": "array"
+    },
+    "projects": {
+      "items": {
+        "$ref": "#/$defs/FreelanceProjects"
+      },
+      "title": "Projects",
+      "type": "array"
+    },
+    "education": {
+      "items": {
+        "$ref": "#/$defs/Education"
+      },
+      "title": "Education",
+      "type": "array"
+    }
+  },
+  "required": [
+    "headline",
+    "competences",
+    "experiences",
+    "projects",
+    "education"
+  ],
+  "title": "CurriculumVitae",
+  "type": "object"
+}

@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=cv.json
 metadata:
   github: baluyotraf/curriculum-vitae
   website: https://cv.softwareplus.ml
@@ -26,7 +27,6 @@ competences:
   - area: Programming Languages
     skills:
       - Python
-      - Kotlin
       - Bash
       - SQL
   - area: Machine Learning Areas
@@ -55,7 +55,7 @@ competences:
       - Git
       - Linux
       - Docker
-      - Github Action
+      - Azure Devops
 
 experiences:
   - title: Embedded Machine Learning Engineer
@@ -82,13 +82,30 @@ experiences:
           driver behavior and driver interactions with other pedestrians as
           part of the e-Safe initiative of the European Union.
         result: >-
-          Research write-ups on handlebar interaction, pedestrian detection,
-          and pedestrian position projection were being written to summarize
-          the results.
+          Research papers on handlebar interaction, pedestrian detection,
+          and pedestrian position projection were presented to the e-Safe 
+          initiative.
+      - task: >-
+          Reviewed, validated, and verified different research algorithms for
+          performance, traceability and reproducibility for production 
+          applications.
+        result: >-
+          Powered two-wheelers crash detection project is under hardware 
+          development. Vest crash detection is under algorithm improvement
+          stage. Other algorithms are still under evaluation stage.
+      - task: >-
+          Collaborated with the Autoliv global infrastructure team on cloud
+          system architectures and security.
+        result: >-
+          Improved networking, secret management, and data security of the
+          existing services in Autoliv Research. Future works on improvements
+          on user management and authentication are being discussed.
+
     skills:
       - Python
       - Kotlin
       - TensorFlow
+      - PyTorch
       - Docker
       - SQL Server
       - Azure ML

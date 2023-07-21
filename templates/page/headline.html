@@ -18,7 +18,7 @@
         </a>
         <a href="${cv.headline.website}">
             <i class="fa-brands fa-firefox-browser"></i>
-            <text>${cv.headline.website}</text>
+            <text>${cv.headline.website.replace("https://", "")}</text>
         </a>
         <span>
             <i class="fa-solid fa-mobile"></i>
@@ -35,7 +35,7 @@
         % if cv.metadata and cv.metadata.website:
         <a href="${cv.metadata.website}">
             <i class="fa-solid fa-link"></i>
-            <text>${cv.metadata.website}</text>
+            <text>${cv.metadata.website.replace("https://", "")}</text>
         </a>
         % endif
 

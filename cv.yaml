@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=cv.json
 metadata:
   github: baluyotraf/curriculum-vitae
-  website: https://cv.softwareplus.ml
+  website: https://cv.baluyotraf.com
   printable: ./print
 
 headline:
@@ -11,7 +11,7 @@ headline:
     quality software
   linkedin: baluyotraf
   github: baluyotraf
-  website: https://softwareplus.ml
+  website: https://softwareplusml.baluyotraf.com
   phone: "+46760215374"
   email: baluyotraf@outlook.com
   address: Gothenburg, Sweden

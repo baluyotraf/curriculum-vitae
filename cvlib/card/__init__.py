@@ -1,3 +1,6 @@
+import dataclasses as dc
+from typing import Optional
+
 from PIL import Image
 
 from cvlib.schema import CurriculumVitae
@@ -12,16 +15,37 @@ TAGLINE_SIZE = CARD_SIZE[0] // 20
 TEXT_SPACING = 20
 
 
+@dc.dataclass
+class CardText:
+    text: str
+    font: str
+    font_size: int
+    width: Optional[float] = None
+
+
 def create_card_from_cv(cv: CurriculumVitae) -> Image.Image:
     texts = [
-        (cv.theme.primary_font, cv.headline.name, NAME_SIZE),
-        (cv.theme.secondary_font, cv.headline.tagline, TAGLINE_SIZE),
+        CardText(
+            cv.headline.name, 
+            cv.theme.primary_font, 
+            NAME_SIZE
+        ),
+        CardText(
+            cv.headline.tagline, 
+            cv.theme.secondary_font, 
+            TAGLINE_SIZE, 
+            CARD_SIZE[1]
+        ),
     ]
 
-    fonts = GoogleFontLoader([t[0] for t in texts]).load_font_dict()
+    fonts = GoogleFontLoader([ct.font for ct in texts]).load_font_dict()
     card_texts = MultiText([
-        Text(t[1], fonts[t[0]].font_variant(size=t[2]))
-        for t in texts
+        Text(
+            ct.text, 
+            fonts[ct.font].font_variant(size=ct.font_size), 
+            wrap_width=ct.width
+        )
+        for ct in texts
     ], spacing=TEXT_SPACING)
 
     card = Card(

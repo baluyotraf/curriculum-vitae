@@ -31,11 +31,12 @@ competences:
       - SQL
   - area: Machine Learning Areas
     skills:
-      - Vision
-      - High Frequency
+      - Computer Vision
+      - Time Series
       - NLP
   - area: Data Science libraries
     skills:
+      - PyTorch
       - TensorFlow
       - Scikit-Learn
       - Pandas
@@ -47,9 +48,9 @@ competences:
       - Azure ML
   - area: Data Stores
     skills:
+      - Blob Storage
       - Relational Database
       - HDFS
-      - Redis
   - area: Deployment and Operations
     skills:
       - Git
@@ -63,7 +64,7 @@ experiences:
     consulting_company: LuunaX
     country: Sweden
     start_date: 2022-06-01
-    end_date: present
+    end_date: 2024-03-01
     achievements:
       - task: >-
           Architected, designed, and developed components of the Autoliv Cloud
@@ -73,33 +74,34 @@ experiences:
           Current iteration of the ACSP is running and is processing more
           than 50GB of research data per day.
       - task: >-
-          Designed and developed Android App and SDK to enable researchers
+          Designed and developed cross-platform SDK to enable researchers
           and partner companies to integrate with the ACSP.
         result: >-
-          Initial version of the App and SDK were released internally.
+          Development version of the Android App was developed and the fully
+          developed iOS App was set to be published.
       - task: >-
           Researched electric scooter kinematics and video data to analyze
           driver behavior and driver interactions with other pedestrians as
-          part of the e-Safe initiative of the European Union.
+          part of the e-Safe initiative.
         result: >-
-          Research papers on handlebar interaction, pedestrian detection,
-          and pedestrian position projection were presented to the e-Safe 
-          initiative.
+          Research paper on handlebar interaction, pedestrian detection,
+          and pedestrian position projection was published. A related project
+          called Microvision was publicly funded to continue the study.
       - task: >-
-          Reviewed, validated, and verified different research algorithms for
+          Reviewed, understood, and, validated different crash algorithms for
           performance, traceability and reproducibility for production 
           applications.
         result: >-
-          Powered two-wheelers crash detection project is under hardware 
-          development. Vest crash detection is under algorithm improvement
-          stage. Other algorithms are still under evaluation stage.
+          Concept validation report was published internally that point out the
+          weaknesses of the crash algorithms. This led to further iteration of
+          the algorithms and enlargement of the testing scope.
       - task: >-
           Collaborated with the Autoliv global infrastructure team on cloud
           system architectures and security.
         result: >-
           Improved networking, secret management, and data security of the
-          existing services in Autoliv Research. Future works on improvements
-          on user management and authentication are being discussed.
+          existing services in Autoliv Research. Crucial platforms that require
+          a security overhaul were being reworked.
 
     skills:
       - Python
@@ -176,7 +178,7 @@ experiences:
       - Python
       - TensorFlow
 
-  - title: Faculty
+  - title: Lecturer
     company: Mapúa University - School of EECE
     country: Philippines
     start_date: 2019-02-01
@@ -284,7 +286,7 @@ experiences:
       - AWS SQS
       - AWS S3
 
-  - title: Faculty
+  - title: Lecturer
     company: Adamson University - School of Engineering
     country: Philippines
     start_date: 2018-08-01
@@ -434,6 +436,25 @@ experiences:
       - ArcGIS
 
 projects:
+  - title: E-safe pre-study
+    description: >-
+      A research study that aimed at gaining new knowledge about how e-scooter
+      riders normally ride to improve traffic safety related to e-scooter 
+      riding. Main contributions to the project are object detection, object
+      tracking, depth estimation, and video stabilization with optical flow.
+
+      Paper: https://www.vinnova.se/en/p/e-safe-pre-study/
+    start_date: 2022-06-01
+    end_date: 2022-12-01
+    skills:
+      - Python
+      - PyTorch
+      - OpenCV
+      - Object Detection
+      - Object tracking
+      - Depth Estimation
+      - Optical Flow
+
   - title: Rock Size Distribution
     description: >-
       A project for a startup company to utilize computer vision in computing
@@ -491,6 +512,18 @@ projects:
       - Scikit-Image
 
 education:
+  - degree: Freestanding Courses
+    program: Machine Learning
+    institution: Halmstad University
+    details: >-
+      • Machine Learning for Predictive Maintenance
+
+      • Explainable AI
+
+      • Applied Deep Learning with PyTorch
+
+    start_date: 2023-09-01
+
   - degree: Master's Degree
     program: Computer Engineering
     institution: Mapúa University (Mapúa Institute of Technology)

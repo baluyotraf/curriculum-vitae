@@ -14,14 +14,14 @@ headline:
   website: https://softwareplusml.baluyotraf.com
   phone: "+46760215374"
   email: baluyotraf@outlook.com
-  address: Gothenburg, Sweden
+  address: Malmö, Sweden
   summary: >-
     A machine learning engineer who is proficient in Deep Learning,
     Machine Learning, and Software Engineering. Exploring research ideas and
-    developing software products has been his role for 10 years, bridging
-    the gap between research and development or working on both. Passionate
-    about sharing his knowledge leading him to work with university courses
-    and open source projects.
+    developing software products has been his role for more than 10 years, 
+    bridging the gap between research and development or working on both. 
+    Passionate about sharing his knowledge leading him to work with university 
+    courses and open source projects.
 
 competences:
   - area: Programming Languages
@@ -31,9 +31,9 @@ competences:
       - SQL
   - area: Machine Learning Areas
     skills:
-      - Computer Vision
+      - Bayesian Optimization
       - Time Series
-      - NLP
+      - Computer Vision
   - area: Data Science libraries
     skills:
       - PyTorch
@@ -48,17 +48,53 @@ competences:
       - Azure ML
   - area: Data Stores
     skills:
+      - Postgres and RDBMS 
       - Blob Storage
-      - Relational Database
-      - HDFS
   - area: Deployment and Operations
     skills:
       - Git
+      - GitHub Actions
       - Linux
       - Docker
-      - Azure Devops
 
 experiences:
+  - title: Senior Machine Learning Engineer
+    company: DBtune - Research
+    country: Sweden
+    start_date: 2024-05-01
+    achievements:
+      - task: >-
+          Architected, designed, developed and managed DBtune's core 
+          optimization core library.
+        result: >-
+          The core library that powered all of DBtune's optimization products 
+          has been stable, reporting zero critical bugs since release.
+      - task: >-
+          Architected, designed, developed and managed DBtune's core database 
+          library, containing all database specific algorithm.
+        result: >-
+          The library has powered all of DBtune's database oriented products.
+      - task: >-
+          Researched PostgreSQL behaviors in terms of benchmarking, parameters, 
+          queries, vacuums, and other internal mechanisms to develop algorithms
+          and optimization strategies.
+        result: >-
+          The research results has been included in both the core optimization
+          library and core database library.
+    skills:
+      - Python
+      - PyTorch
+      - Docker
+      - PostgreSQL
+      - AWS EC2
+      - AWS S3
+      - AWS Aurora
+      - AWS RDS
+      - AWS Code Artifact
+      - Azure ML
+      - Azure Flex
+      - GitHub
+
   - title: Embedded Machine Learning Engineer
     company: Autoliv - Research
     consulting_company: LuunaX
@@ -102,7 +138,6 @@ experiences:
           Improved networking, secret management, and data security of the
           existing services in Autoliv Research. Crucial platforms that require
           a security overhaul were being reworked.
-
     skills:
       - Python
       - Kotlin
@@ -436,6 +471,20 @@ experiences:
       - ArcGIS
 
 projects:
+  - title: Alternative Queries (altqq)
+    description: >-
+      Alternative queries is an open-source library created to help with 
+      handcrafted SQL queries. It works by providing a class that represent the
+      queries where its parameter types are checked by Pydantic.
+
+      GitHub Repository: https://github.com/baluyotraf/altqq
+    start_date: 2024-03-01
+    skills:
+      - Python
+      - MS SQL
+      - PostgreSQL
+      - MySQL 
+
   - title: E-safe pre-study
     description: >-
       A research study that aimed at gaining new knowledge about how e-scooter
@@ -475,7 +524,7 @@ projects:
     description: >-
       A project for a startup company to see if identifying people inside the
       mines are feasible using RBG cameras. An SSD network using a Mobilenet
-      as a base model was trained. The model was pretrained using the COCO
+      as a base model was trained. The model was pre-trained using the COCO
       dataset and additional images of people in dark areas were used as the
       training set to simulate mine lighting environments.
     start_date: 2019-08-01
@@ -489,7 +538,7 @@ projects:
       A project for a research team looking at drones to improve rice farming
       processes. For this project, the feasibility of identifying healthy and
       unhealthy rice fields using drone images was tested. A convolutional
-      neural network based on VGG16 was trained. The model was pretrained with
+      neural network based on VGG16 was trained. The model was pre-trained with
       Imagenet and trained with rice drone images.
     start_date: 2019-05-01
     end_date: 2019-07-01
@@ -514,6 +563,13 @@ projects:
 education:
   - degree: Freestanding Courses
     program: Machine Learning
+    institution: Linköping University
+    details: >-
+      • Foundations of Machine Learning
+    start_date: 2025-01-01
+
+  - degree: Freestanding Courses
+    program: Machine Learning
     institution: Halmstad University
     details: >-
       • Machine Learning for Predictive Maintenance
@@ -522,6 +578,7 @@ education:
 
       • Applied Deep Learning with PyTorch
 
+      • Bayesian Statistics for Machine Learning
     start_date: 2023-09-01
 
   - degree: Master's Degree

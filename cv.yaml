@@ -59,7 +59,7 @@ competences:
 
 experiences:
   - title: Senior Machine Learning Engineer
-    company: DBtune
+    company: DBtune - Research
     country: Sweden
     start_date: 2024-05-01
     achievements:
@@ -471,6 +471,20 @@ experiences:
       - ArcGIS
 
 projects:
+  - title: Alternative Queries (altqq)
+    description: >-
+      Alternative queries is an open-source library created to help with 
+      handcrafted SQL queries. It works by providing a class that represent the
+      queries where its parameter types are checked by Pydantic.
+
+      GitHub Repository: https://github.com/baluyotraf/altqq
+    start_date: 2024-03-01
+    skills:
+      - Python
+      - MS SQL
+      - PostgreSQL
+      - MySQL 
+
   - title: E-safe pre-study
     description: >-
       A research study that aimed at gaining new knowledge about how e-scooter

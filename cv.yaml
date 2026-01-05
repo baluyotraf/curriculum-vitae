@@ -48,14 +48,14 @@ competences:
       - Azure ML
   - area: Data Stores
     skills:
-      - Postgres and RDBMS 
+      - PostgreSQL
       - Blob Storage
   - area: Deployment and Operations
     skills:
-      - Git
       - GitHub Actions
-      - Linux
       - Docker
+      - Pulumi
+      - Ansible
 
 experiences:
   - title: Senior Machine Learning Engineer
@@ -75,6 +75,11 @@ experiences:
         result: >-
           The library has powered all of DBtune's database oriented products.
       - task: >-
+          Architected, designed, developed and managed DBtune's core 
+          experimentation library
+        result: >-
+          The library has been used for all infrastructure related experiments.
+      - task: >-
           Researched PostgreSQL behaviors in terms of benchmarking, parameters, 
           queries, vacuums, and other internal mechanisms to develop algorithms
           and optimization strategies.
@@ -92,8 +97,10 @@ experiences:
       - AWS RDS
       - AWS Code Artifact
       - Azure ML
-      - Azure Flex
+      - Azure VMs
       - GitHub
+      - Ansible
+      - Pulumi
 
   - title: Embedded Machine Learning Engineer
     company: Autoliv - Research

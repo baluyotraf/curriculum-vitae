@@ -1,0 +1,304 @@
+/*
+CSS Variables
+*/
+
+:root {
+    --color-primary: #4e342e;
+    --color-primary-dark: #260e04;
+    --color-primary-light: #7b5e57;
+    --color-primary-text: #ffffff;
+
+    --color-secondary: #ffccbc;
+    --color-secondary-dark: #e9ccc3;
+    --color-secondary-light: #ffffee;
+    --color-secondary-text: #000000;
+
+    --web-mode: 1;
+
+    --paper-width: 210mm;
+    --paper-background: #ffffff;
+    --paper-shadow: rgba(0, 0, 0, var(--web-mode));
+    --body-backdrop: rgba(77, 77, 77, var(--web-mode));
+
+    --spacing-size-large: 8mm;
+    --spacing-size-normal: 4mm;
+    --spacing-size-small: 2mm;
+
+    --border-size: 0.2mm;
+    --border-color: rgba(0, 0, 0, 0.2);
+    --border-radius: 0mm;
+
+    --font-primary: Noto Sans JP;
+    --font-secondary: Maven Pro;
+}
+
+h1 {
+    font-family: var(--font-primary);
+    font-size: 8.5mm;
+    font-weight: 300;
+    margin: 1mm 0 2mm 0;
+}
+
+h2 {
+    font-family: var(--font-primary);
+    font-size: 5mm;
+    font-weight: 500;
+    margin: 1mm 0 2mm 0;
+}
+
+h3 {
+    font-family: var(--font-primary);
+    font-size: 5mm;
+    font-weight: 700;
+    margin: 1mm 0 2mm 0;
+}
+
+h4 {
+    font-family: var(--font-primary);
+    font-size: 3.8mm;
+    font-weight: 500;
+    margin: 1mm 0 1.5mm 0;
+}
+
+h5 {
+    font-family: var(--font-primary);
+    font-size: 3.4mm;
+    font-weight: 500;
+    margin: 1mm 0 1mm 0;
+}
+
+p {
+    font-family: var(--font-secondary);
+    font-size: 3.4mm;
+    margin: 0;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background: var(--body-backdrop);
+    margin: 0;
+}
+
+/*
+Material
+*/
+
+.mr-card {
+    border: var(--border-size) solid var(--border-color);
+    padding: var(--spacing-size-normal);
+}
+
+.mr-card-header {
+    margin-bottom: var(--spacing-size-normal);
+}
+
+
+.mr-chip-list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mr-chip {
+    padding: 0.5mm var(--spacing-size-normal) 1mm var(--spacing-size-normal);
+    border-radius: var(--border-radius);
+    margin: 0.5mm;
+    background: var(--color-secondary);
+    color: var(--color-secondary-text);
+    font-family: var(--font-secondary);
+    font-size: 3.8mm;
+}
+
+.mr-chip:nth-child(even) {
+    background: var(--color-secondary-dark);
+}
+
+/*
+Pages and Sections
+*/
+
+.cv-page {
+    max-width: var(--paper-width);
+    margin: calc(var(--spacing-size-large) * var(--web-mode)) auto;
+    background-color: var(--paper-background);
+    box-shadow: var(--spacing-size-normal)
+                var(--spacing-size-normal)
+                var(--paper-shadow);
+}
+
+.cv-page-content {
+    padding: var(--spacing-size-large);
+    padding-top: 0;
+}
+
+.cv-section {
+    break-inside: avoid;
+}
+
+.cv-section-header {
+    text-align: center;
+    padding: var(--spacing-size-small);
+}
+
+.cv-section-content {
+    margin: var(--spacing-size-small);
+}
+
+/*
+Timelines
+*/
+
+.cv-timeline {
+    display: grid;
+    grid-template-columns: min-content auto;
+    column-gap: 1mm;
+}
+
+.cv-timeline-time {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    text-transform: uppercase;
+    background: var(--color-primary-light);
+    color: var(--color-primary-text);
+    border: var(--border-size) solid var(--border-color);
+    padding: var(--spacing-size-normal);
+    padding-top: calc(var(--spacing-size-normal) + 2mm);
+    font-family: var(--font-secondary);
+    font-size: 3.5mm;
+    font-weight: 900;
+    white-space: nowrap;
+    width: 17mm;
+}
+
+.cv-timeline-time > * {
+    margin-bottom: 1mm;
+}
+
+.cv-timeline-event {
+    grid-column: 2;
+}
+
+/*
+Banner
+*/
+
+.cv-banner {
+    background-color: var(--color-primary-dark);
+    box-shadow: var(--spacing-size-normal)
+                var(--spacing-size-normal);
+}
+
+.cv-metadata {
+    color: var(--color-primary-text);
+    font-family: var(--font-primary);
+    padding: var(--spacing-size-normal);
+    margin: 0 auto;
+    width: fit-content;
+    list-style: None;
+}
+
+.cv-metadata > li {
+    margin: var(--spacing-size-small);
+}
+
+/*
+Headline
+*/
+
+.cv-headline {
+    display: grid;
+    grid-template-rows: 1f auto;
+}
+
+.cv-headline-info {
+    grid-row: 1;
+    grid-column: 1;
+    background: var(--color-primary);
+    color: var(--color-primary-text);
+    padding: var(--spacing-size-large)
+             var(--spacing-size-normal)
+             var(--spacing-size-normal)
+             var(--spacing-size-large);
+}
+
+.cv-headline-summary {
+    font-family: var(--font-secondary);
+    font-size: 4.5mm;
+}
+
+.cv-headline-contacts {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: var(--color-primary-dark);
+    color: var(--color-primary-text);
+    padding: var(--spacing-size-large)
+             var(--spacing-size-large)
+             var(--spacing-size-normal)
+             var(--spacing-size-normal);
+    font-family: var(--font-secondary);
+}
+
+.cv-headline-contacts > span,
+.cv-headline-contacts > a {
+    margin: 1mm 0 1mm 0;
+}
+
+/*
+Competences
+*/
+
+.cv-competences {
+    display: grid;
+    grid-template-columns: 60mm 1fr;
+    column-gap: var(--spacing-size-normal);
+    row-gap: var(--spacing-size-small);
+}
+
+.cv-competence-area {
+    text-align: right;
+    margin: auto 0 auto 0;
+}
+
+.cv-competence-skills {
+    margin: 0;
+}
+
+
+/*
+Experiences
+*/
+
+.cv-experience-achievements {
+    margin-bottom: var(--spacing-size-normal);
+}
+
+.cv-experience-achievement-task {
+    font-weight: 700;
+}
+
+.cv-experience-achievement-result {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.cv-experience-subtitle > i {
+    margin-right: var(--spacing-size-small);
+}
+
+/*
+Projects
+*/
+
+.cv-project-description {
+    margin-bottom: var(--spacing-size-normal);
+}

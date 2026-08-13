@@ -26,6 +26,10 @@
           "title": "Phone",
           "type": "string"
         },
+        "whatsapp": {
+          "title": "Whatsapp",
+          "type": "string"
+        },
         "email": {
           "title": "Email",
           "type": "string"
@@ -46,6 +50,7 @@
         "github",
         "website",
         "phone",
+        "whatsapp",
         "email",
         "address",
         "summary"
@@ -104,7 +109,8 @@
               "type": "string"
             },
             {
-              "const": "present"
+              "const": "present",
+              "type": "string"
             }
           ],
           "default": "present",
@@ -143,7 +149,8 @@
               "type": "string"
             },
             {
-              "const": "present"
+              "const": "present",
+              "type": "string"
             }
           ],
           "default": "present",
@@ -264,7 +271,8 @@
               "type": "string"
             },
             {
-              "const": "present"
+              "const": "present",
+              "type": "string"
             }
           ],
           "default": "present",
@@ -357,11 +365,7 @@
   },
   "properties": {
     "theme": {
-      "allOf": [
-        {
-          "$ref": "#/$defs/Theme"
-        }
-      ],
+      "$ref": "#/$defs/Theme",
       "default": {
         "primary_color": "#4e342e",
         "primary_color_dark": "#260e04",

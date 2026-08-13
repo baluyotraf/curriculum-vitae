@@ -25,33 +25,29 @@ class CardText:
 
 def create_card_from_cv(cv: CurriculumVitae) -> Image.Image:
     texts = [
+        CardText(cv.headline.name, cv.theme.primary_font, NAME_SIZE),
         CardText(
-            cv.headline.name, 
-            cv.theme.primary_font, 
-            NAME_SIZE
-        ),
-        CardText(
-            cv.headline.tagline, 
-            cv.theme.secondary_font, 
-            TAGLINE_SIZE, 
-            CARD_SIZE[1]
+            cv.headline.tagline, cv.theme.secondary_font, TAGLINE_SIZE, CARD_SIZE[1]
         ),
     ]
 
     fonts = GoogleFontLoader([ct.font for ct in texts]).load_font_dict()
-    card_texts = MultiText([
-        Text(
-            ct.text, 
-            fonts[ct.font].font_variant(size=ct.font_size), 
-            wrap_width=ct.width
-        )
-        for ct in texts
-    ], spacing=TEXT_SPACING)
+    card_texts = MultiText(
+        [
+            Text(
+                ct.text,
+                fonts[ct.font].font_variant(size=ct.font_size),
+                wrap_width=ct.width,
+            )
+            for ct in texts
+        ],
+        spacing=TEXT_SPACING,
+    )
 
     card = Card(
         CARD_SIZE,
         foreground=cv.theme.primary_color_text,
-        background=cv.theme.primary_color
+        background=cv.theme.primary_color,
     )
 
     return card.render(card_texts)

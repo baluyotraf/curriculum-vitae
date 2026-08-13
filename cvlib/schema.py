@@ -48,6 +48,11 @@ class BasicInfo(BaseModel):
     summary: str
 
 
+class Page(BaseModel):
+    width: str = "210mm"
+    height: str = "297mm"
+
+
 class Competence(BaseModel):
     area: str
     skills: List[str]
@@ -108,6 +113,7 @@ DEFAULT_THEME = Theme(
 
 class CurriculumVitae(BaseModel):
     theme: Theme = DEFAULT_THEME
+    page: Page = Page()
     metadata: Optional[Metadata] = None
     headline: BasicInfo
     competences: List[Competence]

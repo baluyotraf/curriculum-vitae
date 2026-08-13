@@ -215,6 +215,22 @@
       "title": "Metadata",
       "type": "object"
     },
+    "Page": {
+      "properties": {
+        "width": {
+          "default": "210mm",
+          "title": "Width",
+          "type": "string"
+        },
+        "height": {
+          "default": "297mm",
+          "title": "Height",
+          "type": "string"
+        }
+      },
+      "title": "Page",
+      "type": "object"
+    },
     "ProfessionalAchievement": {
       "properties": {
         "task": {
@@ -377,6 +393,13 @@
         "secondary_color_light": "#ffffee",
         "secondary_color_text": "#000000",
         "secondary_font": "Maven Pro"
+      }
+    },
+    "page": {
+      "$ref": "#/$defs/Page",
+      "default": {
+        "width": "210mm",
+        "height": "297mm"
       }
     },
     "metadata": {

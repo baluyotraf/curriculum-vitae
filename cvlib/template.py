@@ -46,7 +46,12 @@ def render_page(config: str, output_dir: str, web: bool) -> None:
         cv = CurriculumVitae(**yaml.safe_load(cf))
 
     html_path = os.path.join(output_dir, HTML_OUTPUT_NAME)
-    render_template(html_path, HTML_TEMPLATE_NAME, cv=cv, card_path=CARD_OUTPUT_NAME)
+    render_template(
+        html_path,
+        HTML_TEMPLATE_NAME,
+        cv=cv,
+        card_path=CARD_OUTPUT_NAME,
+    )
 
     css_path = os.path.join(output_dir, CSS_OUTPUT_NAME)
     render_template(css_path, CSS_TEMPLATE_NAME, cv=cv, web_mode=int(web))

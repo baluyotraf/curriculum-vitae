@@ -20,18 +20,18 @@
             <i class="fa-brands fa-firefox-browser"></i>
             <text>${cv.headline.website.replace("https://", "")}</text>
         </a>
-        <span>
+        <a href="tel:${cv.headline.phone}">
             <i class="fa-solid fa-mobile"></i>
             <text>${cv.headline.phone}</text>
-        </span>
+        </a>
         <a href="https://wa.me/${cv.headline.whatsapp.replace('+', '')}">
             <i class="fa-brands fa-whatsapp"></i>
             <text>${cv.headline.whatsapp}</text>
         </a>
-        <span>
+        <a href="mailto:${cv.headline.email}">
             <i class="fa-solid fa-envelope"></i>
             <text>${cv.headline.email}</text>
-        </span>
+        </a>
         <span>
             <i class="fa-solid fa-location-dot"></i>
             <text>${cv.headline.address}</text>

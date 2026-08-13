@@ -4,6 +4,10 @@ metadata:
   website: https://cv.baluyotraf.com
   printable: ./print
 
+page:
+  width: 210mm
+  height: 1800mm
+
 headline:
   name: Raffaello Baluyot
   tagline: >-

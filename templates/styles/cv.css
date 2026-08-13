@@ -1,5 +1,19 @@
 /*
 ##############################################################################
+Page Definition for Print
+##############################################################################
+*/
+
+% if web_mode == 0:
+@page {
+    size: ${cv.page.width} ${cv.page.height};
+    margin: 0;
+}
+% endif
+
+
+/*
+##############################################################################
 CSS Variables
 ##############################################################################
 */
@@ -17,7 +31,7 @@ CSS Variables
 
     --web-mode: ${web_mode};
 
-    --paper-width: 210mm;
+    --paper-width: ${cv.page.width};
     --paper-background: #ffffff;
     --paper-shadow: rgba(0, 0, 0, var(--web-mode));
     --body-backdrop: rgba(77, 77, 77, var(--web-mode));

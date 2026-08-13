@@ -41,6 +41,7 @@ class BasicInfo(BaseModel):
     github: str
     website: str
     phone: str
+    whatsapp: str
     email: str
     address: str
 

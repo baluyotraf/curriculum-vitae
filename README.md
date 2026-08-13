@@ -47,6 +47,5 @@ If these options does not work
 for you, there's an option to further customize the HTML and CSS in the
 `templates` folder. These templates were created using [Mako].
 
-
 [CV Software+ML]: https://cv.baluyotraf.com/
 [Mako]: https://www.makotemplates.org/

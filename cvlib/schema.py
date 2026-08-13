@@ -54,7 +54,7 @@ class Competence(BaseModel):
 
 class ProfessionalAchievement(BaseModel):
     task: str
-    result: str = ''
+    result: str = ""
 
 
 class ProfessionalExperience(BaseModel):
@@ -64,7 +64,7 @@ class ProfessionalExperience(BaseModel):
     country: str
 
     start_date: date
-    end_date: Union[date, Literal['present']] = 'present'
+    end_date: Union[date, Literal["present"]] = "present"
 
     achievements: List[ProfessionalAchievement]
 
@@ -76,7 +76,7 @@ class FreelanceProjects(BaseModel):
     description: str
 
     start_date: date
-    end_date: Union[date, Literal['present']] = 'present'
+    end_date: Union[date, Literal["present"]] = "present"
 
     skills: List[str]
 
@@ -88,21 +88,20 @@ class Education(BaseModel):
     details: str
 
     start_date: date
-    end_date: Union[date, Literal['present']] = 'present'
+    end_date: Union[date, Literal["present"]] = "present"
 
 
 DEFAULT_THEME = Theme(
-    primary_color = '#4e342e',
-    primary_color_dark = '#260e04',
-    primary_color_light = '#7b5e57',
-    primary_color_text = '#ffffff',
-    primary_font = 'Noto Sans JP',
-
-    secondary_color = '#ffccbc',
-    secondary_color_dark = '#e9ccc3',
-    secondary_color_light = '#ffffee',
-    secondary_color_text = '#000000',
-    secondary_font = 'Maven Pro'
+    primary_color="#4e342e",
+    primary_color_dark="#260e04",
+    primary_color_light="#7b5e57",
+    primary_color_text="#ffffff",
+    primary_font="Noto Sans JP",
+    secondary_color="#ffccbc",
+    secondary_color_dark="#e9ccc3",
+    secondary_color_light="#ffffee",
+    secondary_color_text="#000000",
+    secondary_font="Maven Pro",
 )
 
 

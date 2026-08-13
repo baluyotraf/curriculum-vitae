@@ -11,4 +11,4 @@ repos:
     hooks:
       - id: prettier
         types_or: [markdown, toml]
-        args: [--prose-wrap, preserve]
+        args: [--prose-wrap, always, --print-width, "79"]
